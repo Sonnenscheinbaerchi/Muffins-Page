@@ -17,12 +17,7 @@
  //IMPORT GRID
  @import "muffins/style";
 
- //IMPORTCONFIGS
- @import "config/variables";
- @import "config/colors";
-
- //IMPORT PATTERNS
- @import "patterns/layout";
- @import "patterns/code";
+ //import theme
+ @import "default-theme/style.scss";
 
 

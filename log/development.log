@@ -19697,3 +19697,1836 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:35:20
 
 
 Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:35:20 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:43:01 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (114.0ms)
+  Rendered layouts/_header.html.slim (4.8ms)
+  Rendered layouts/_sidebar.html.slim (0.6ms)
+  Rendered layouts/_content.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 1199ms (Views: 1195.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:43:03 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:03 +0200
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:43:03 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.9ms)
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:03 +0200
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:03 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:03 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:03 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:03 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:03 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:03 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:03 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:03 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (41.7ms)
+  Rendered layouts/_header.html.slim (4.4ms)
+  Rendered layouts/_sidebar.html.slim (0.6ms)
+  Rendered layouts/_content.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:43:43 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:50:10 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (37.3ms)
+Completed 500 Internal Server Error in 46ms
+
+ActionView::Template::Error (Illegal shortcut
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/views/pages/grid.html.slim, Line 310, Column 6
+    ..col-xs-9.pull-md-3
+    ^
+):
+  slim (2.0.2) lib/slim/parser.rb:478:in `syntax_error!'
+  slim (2.0.2) lib/slim/parser.rb:307:in `parse_tag'
+  slim (2.0.2) lib/slim/parser.rb:228:in `parse_line_indicators'
+  slim (2.0.2) lib/slim/parser.rb:176:in `parse_line'
+  slim (2.0.2) lib/slim/parser.rb:77:in `call'
+  temple (0.6.7) lib/temple/engine.rb:50:in `block in call'
+  temple (0.6.7) lib/temple/engine.rb:50:in `each'
+  temple (0.6.7) lib/temple/engine.rb:50:in `inject'
+  temple (0.6.7) lib/temple/engine.rb:50:in `call'
+  temple (0.6.7) lib/temple/mixins/template.rb:10:in `compile'
+  temple (0.6.7) lib/temple/templates/rails.rb:34:in `call'
+  actionview (4.1.0) lib/action_view/template.rb:270:in `compile'
+  actionview (4.1.0) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.0) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.0) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.1.0) lib/action_view/template.rb:232:in `synchronize'
+  actionview (4.1.0) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.0) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.0) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.0) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.0) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.0) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  high_voltage (2.1.0) app/controllers/concerns/high_voltage/static_page.rb:28:in `show'
+  actionpack (4.1.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.0) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.6ms)
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:50:12 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (Illegal shortcut
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/views/pages/grid.html.slim, Line 310, Column 6
+    ..col-xs-9.pull-md-3
+    ^
+):
+  slim (2.0.2) lib/slim/parser.rb:478:in `syntax_error!'
+  slim (2.0.2) lib/slim/parser.rb:307:in `parse_tag'
+  slim (2.0.2) lib/slim/parser.rb:228:in `parse_line_indicators'
+  slim (2.0.2) lib/slim/parser.rb:176:in `parse_line'
+  slim (2.0.2) lib/slim/parser.rb:77:in `call'
+  temple (0.6.7) lib/temple/engine.rb:50:in `block in call'
+  temple (0.6.7) lib/temple/engine.rb:50:in `each'
+  temple (0.6.7) lib/temple/engine.rb:50:in `inject'
+  temple (0.6.7) lib/temple/engine.rb:50:in `call'
+  temple (0.6.7) lib/temple/mixins/template.rb:10:in `compile'
+  temple (0.6.7) lib/temple/templates/rails.rb:34:in `call'
+  actionview (4.1.0) lib/action_view/template.rb:270:in `compile'
+  actionview (4.1.0) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.0) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.0) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.1.0) lib/action_view/template.rb:232:in `synchronize'
+  actionview (4.1.0) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.0) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.0) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.0) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.0) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.0) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  high_voltage (2.1.0) app/controllers/concerns/high_voltage/static_page.rb:28:in `show'
+  actionpack (4.1.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.0) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (5.0ms)
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:51:00 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (61.1ms)
+  Rendered layouts/_header.html.slim (9.5ms)
+  Rendered layouts/_sidebar.html.slim (1.3ms)
+  Rendered layouts/_content.html.slim (0.2ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 92ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:51:01 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:01 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:01 +0200
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:01 +0200
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:01 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:51:01 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:01 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:01 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:01 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:01 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:01 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:01 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:01 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:01 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:51:43 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (1.3ms)
+  Rendered layouts/_header.html.slim (4.7ms)
+  Rendered layouts/_sidebar.html.slim (1.0ms)
+  Rendered layouts/_content.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 954ms (Views: 953.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:51:45 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:51:45 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:45 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:45 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:45 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:45 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:45 +0200
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:45 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:45 +0200
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:45 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:45 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:45 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:45 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:45 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (1.2ms)
+  Rendered layouts/_header.html.slim (6.0ms)
+  Rendered layouts/_sidebar.html.slim (0.7ms)
+  Rendered layouts/_content.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.7ms)
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:51:49 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (35.5ms)
+  Rendered layouts/_header.html.slim (7.0ms)
+  Rendered layouts/_sidebar.html.slim (0.8ms)
+  Rendered layouts/_content.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 54ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:25 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (1.2ms)
+  Rendered layouts/_header.html.slim (10.5ms)
+  Rendered layouts/_sidebar.html.slim (1.0ms)
+  Rendered layouts/_content.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 29ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:26 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (1.4ms)
+  Rendered layouts/_header.html.slim (5.3ms)
+  Rendered layouts/_sidebar.html.slim (0.5ms)
+  Rendered layouts/_content.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.9ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:52:27 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (102.1ms)
+  Rendered layouts/_header.html.slim (12.4ms)
+  Rendered layouts/_sidebar.html.slim (1.5ms)
+  Rendered layouts/_content.html.slim (0.3ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 146ms (Views: 142.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:54:43 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.2ms)
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:55:08 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (53.6ms)
+  Rendered layouts/_header.html.slim (9.4ms)
+  Rendered layouts/_sidebar.html.slim (0.8ms)
+  Rendered layouts/_content.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 77ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:55:09 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.8ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:09 +0200
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:09 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:09 +0200
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:09 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:55:09 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:09 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:09 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:09 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:09 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:09 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:09 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:09 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:09 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (4.5ms)
+  Rendered layouts/_header.html.slim (164.4ms)
+  Rendered layouts/_sidebar.html.slim (0.6ms)
+  Rendered layouts/_content.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 182ms (Views: 181.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.0ms)
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:10 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (32.8ms)
+  Rendered layouts/_header.html.slim (9.5ms)
+  Rendered layouts/_sidebar.html.slim (0.9ms)
+  Rendered layouts/_content.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.7ms)
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:21 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (1.2ms)
+  Rendered layouts/_header.html.slim (16.0ms)
+  Rendered layouts/_sidebar.html.slim (0.5ms)
+  Rendered layouts/_content.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 29ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:55:23 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:56:11 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (1.8ms)
+  Rendered layouts/_header.html.slim (4.4ms)
+  Rendered layouts/_sidebar.html.slim (0.8ms)
+  Rendered layouts/_content.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 946ms (Views: 945.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:56:12 +0200
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:56:12 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:12 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:12 +0200
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:12 +0200
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:12 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:12 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:12 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:12 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:12 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:12 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:12 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:12 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:12 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (1.2ms)
+  Rendered layouts/_header.html.slim (5.5ms)
+  Rendered layouts/_sidebar.html.slim (0.6ms)
+  Rendered layouts/_content.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 14:56:13 +0200
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 16:01:02 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 1052ms
+
+ActionView::Template::Error (File to import not found or unreadable: default-theme/style.scss.
+Load paths:
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/fonts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/images
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets
+  /Users/stefanie/Projekte/Mine/Muffins/Page/vendor/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/vendor/assets/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/jquery-rails-3.1.0/vendor/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/compass-0.12.6/frameworks/blueprint/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets
+  Compass::SpriteImporter
+  (in /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets/application.css.scss:21)):
+    3:   head
+    4:     meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"
+    5:     title MUFFINS - Scss Framework
+    6:     = stylesheet_link_tag 'application', media: 'all'
+    7:     = csrf_meta_tags
+    8:   body.flat 
+    9:     #wrapper
+  app/assets/stylesheets/application.css.scss:21
+  app/views/layouts/application.html.slim:6:in `_app_views_layouts_application_html_slim__1207057808359485390_70317144303200'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.2ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.6ms)
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 16:03:13 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 792ms
+
+ActionView::Template::Error (File to import not found or unreadable: default-theme/style.scss.
+Load paths:
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/fonts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/images
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets
+  /Users/stefanie/Projekte/Mine/Muffins/Page/vendor/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/vendor/assets/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/jquery-rails-3.1.0/vendor/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/compass-0.12.6/frameworks/blueprint/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets
+  Compass::SpriteImporter
+  (in /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets/application.css.scss:21)):
+    3:   head
+    4:     meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"
+    5:     title MUFFINS - Scss Framework
+    6:     = stylesheet_link_tag 'application', media: 'all'
+    7:     = csrf_meta_tags
+    8:   body.flat 
+    9:     #wrapper
+  app/assets/stylesheets/application.css.scss:21
+  app/views/layouts/application.html.slim:6:in `_app_views_layouts_application_html_slim__1207057808359485390_70317144303200'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.2ms)
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 16:03:27 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 765ms
+
+ActionView::Template::Error (File to import not found or unreadable: default-theme/style.scss.
+Load paths:
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/fonts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/images
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets
+  /Users/stefanie/Projekte/Mine/Muffins/Page/vendor/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/vendor/assets/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/jquery-rails-3.1.0/vendor/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/compass-0.12.6/frameworks/blueprint/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets
+  Compass::SpriteImporter
+  (in /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets/application.css.scss:21)):
+    3:   head
+    4:     meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"
+    5:     title MUFFINS - Scss Framework
+    6:     = stylesheet_link_tag 'application', media: 'all'
+    7:     = csrf_meta_tags
+    8:   body.flat 
+    9:     #wrapper
+  app/assets/stylesheets/application.css.scss:21
+  app/views/layouts/application.html.slim:6:in `_app_views_layouts_application_html_slim__1207057808359485390_70317144303200'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.0ms)
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 16:09:20 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (201.8ms)
+Completed 500 Internal Server Error in 1653ms
+
+ActionView::Template::Error (File to import not found or unreadable: config/variables.
+Load paths:
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/fonts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/images
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets
+  /Users/stefanie/Projekte/Mine/Muffins/Page/vendor/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/vendor/assets/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/jquery-rails-3.1.0/vendor/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/compass-0.12.6/frameworks/blueprint/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets
+  Compass::SpriteImporter
+  (in /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets/application.css.scss:24)):
+    3:   head
+    4:     meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"
+    5:     title MUFFINS - Scss Framework
+    6:     = stylesheet_link_tag 'application', media: 'all'
+    7:     = csrf_meta_tags
+    8:   body.flat 
+    9:     #wrapper
+  app/assets/stylesheets/application.css.scss:24
+  app/views/layouts/application.html.slim:6:in `_app_views_layouts_application_html_slim__1207057808359485390_70317144303200'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.9ms)
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 16:13:29 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 1601ms
+
+ActionView::Template::Error (File to import not found or unreadable: config/variables.
+Load paths:
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  CompassRails::SpriteImporter
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/fonts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/images
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets
+  /Users/stefanie/Projekte/Mine/Muffins/Page/vendor/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/vendor/assets/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/jquery-rails-3.1.0/vendor/assets/javascripts
+  /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/compass-0.12.6/frameworks/blueprint/stylesheets
+  /Users/stefanie/.gem/ruby/2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets
+  Compass::SpriteImporter
+  (in /Users/stefanie/Projekte/Mine/Muffins/Page/app/assets/stylesheets/application.css.scss:24)):
+    3:   head
+    4:     meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"
+    5:     title MUFFINS - Scss Framework
+    6:     = stylesheet_link_tag 'application', media: 'all'
+    7:     = csrf_meta_tags
+    8:   body.flat 
+    9:     #wrapper
+  app/assets/stylesheets/application.css.scss:24
+  app/views/layouts/application.html.slim:6:in `_app_views_layouts_application_html_slim__1207057808359485390_70317144303200'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.0ms)
+
+
+Started GET "/pages/grid" for 127.0.0.1 at 2014-06-20 16:13:44 +0200
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"grid"}
+  Rendered pages/grid.html.slim within layouts/application (2.5ms)
+  Rendered layouts/_header.html.slim (6.9ms)
+  Rendered layouts/_sidebar.html.slim (0.6ms)
+  Rendered layouts/_content.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 1345ms (Views: 1344.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2014-06-20 16:13:45 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stefanie/.rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /Users/stefanie/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-20 16:13:45 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 16:13:45 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 16:13:45 +0200
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-06-20 16:13:45 +0200
+
+
+Started GET "/assets/dokumentation.js?body=1" for 127.0.0.1 at 2014-06-20 16:13:45 +0200
+
+
+Started GET "/assets/dokumentation_buttons.js?body=1" for 127.0.0.1 at 2014-06-20 16:13:45 +0200
+
+
+Started GET "/assets/dokumentation_media.js?body=1" for 127.0.0.1 at 2014-06-20 16:13:46 +0200
+
+
+Started GET "/assets/dokumentation_navigation.js?body=1" for 127.0.0.1 at 2014-06-20 16:13:46 +0200
+
+
+Started GET "/assets/dokumentation_forms.js?body=1" for 127.0.0.1 at 2014-06-20 16:13:46 +0200
+
+
+Started GET "/assets/dokumentation_setup.js?body=1" for 127.0.0.1 at 2014-06-20 16:13:46 +0200
+
+
+Started GET "/assets/dokumentation_structure.js?body=1" for 127.0.0.1 at 2014-06-20 16:13:46 +0200
+
+
+Started GET "/assets/grid.js?body=1" for 127.0.0.1 at 2014-06-20 16:13:46 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-20 16:13:46 +0200
