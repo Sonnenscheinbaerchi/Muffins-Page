@@ -287,7 +287,25 @@ h4 Orientation Detection
       = '</div>'
   .example.col-xs-12
     .row
-      .col-xs-12.hide-md
+      .col-xs-12.hide-for-landscape
         p = '.col-x-12 .hide-for-landscape (is portrait)'
-      .col-xs-12.hide-xs.show-md
+      .col-xs-12.hide-for-portrait
         p = '.col-xs-12 .hide-for-portrait (is landscape)'
+h3 Ordering Classes
+p Mit den Ordering Classes kannst du die Reihenfolge deiner Container anpassen, ohne den HTML Code zu verändern.
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<div class="row">'
+      br
+      = '  <div class="col-xs-9 push-xs-3">.col-xs-9 .push-xs-3  (1. Div)</div>'
+      br
+      = '  <div class="col-xs-3 pull-xs-9">.col-xs-3 .pull-xs-9  (2. Div)</div>'
+      br
+      = '</div>'
+  .example.col-xs-12
+    .row
+      .col-xs-9.push-xs-3
+        p = '.col-xs-9 .push-xs-3  (1. Div)'
+      .col-xs-3.pull-xs-9
+        p = '.col-xs-3 .pull-xs-9  (2. Div)'
