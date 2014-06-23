@@ -1,1 +1,112 @@
 h2 Setup
+
+
+h3 Get started
+ol
+  li Downloade Grid & Theme
+  li Installiere Ruby
+  li Installiere Sass
+  li Binde das Grid und das Theme in dein Projekt ein
+
+h3 Download
+p Muffins bietet verschiedenen Möglichkeiten für einen schnellen Start.
+p Das spezielle an Muffins ist: Es ist ein reines Sass-Framework! Wir bieten dir keine CSS-Varianten, denn du solltest dein Grid zunächst costumizen. Auch das Zusammenspiel aus Grid und Theme funktioniert im Sass.
+h4 Das Grid
+a.btn.primary href="#" Download Grid
+
+h4 Themes
+a.btn.primary href="#" Download Default-Theme
+
+h3 Installiere Ruby
+
+h3 Installiere Sass
+
+h3 Binde das Grid und das Theme in dein Projekt ein
+h4 Grid einbinden
+p Im Download-Paket findest du den Ordner "muffins" mit der folgenden Dateistruktur. Dieser Ordner enthält alle Kompnenten des Grid-Frameworks. 
+pre 
+  | muffins/
+  br
+  |  ├── config/
+  br
+  |  │   └── _grid.example.scss
+  br
+  |  ├── mixins/
+  br
+  |  │   └── _grid.scss
+  br
+  |  ├── modules/
+  br
+  |  │   ├── _global.scss
+  br
+  |  │   ├── _grid.scss
+  br
+  |  │   └── _utility-classes.scss
+  br
+  |  ├── reset/
+  br
+  |  │   ├── _base.scss
+  br
+  |  │   ├── _html5.scss
+  br
+  |  │   ├── _lists.scss
+  br
+  |  │   └── _typography.scss
+  br
+  |  └── style.scss
+
+p Füge nun den muffins-Ordner in dein Projekt ein. 
+p Um das Grid zu verwenden musst du im "config"-Ordner eine "_grid.scss"-Datei anlegen. Im Downll´oad-Paket ist bereits eine Beispieldatei (_grid.example.scss) vorhanden, an der du dich orientieren kannst. Alle anderen Dateien solltest du für die einfache Aktualisierung unverändert lassen.  
+p 
+  | Hier kannst du nun eine individuellen Einstellungen für dein Grid vornehmen (nähere Erklärung dazu unter 
+  a href="#" Grid
+  | ).
+p Anschließend musst du in deiner Projekteigenen Sass-Datei das Framework inkludieren.
+pre
+  code.html
+    = '@import "[Pfad zum muffins-Ordner]/style"'
+p Jetzt kannst du das Grid vollständig verwenden.
+h4 Theme einbinden
+p Im Download-Paket findest du einen Ordner mit dem Theme-Namen mit der folgenden beispielhaften Ordnerstruktur. Dieser Ordner enthält alle Komponenten des Themes. Bitte beachte hierbei, dass die Dateien hier durchaus anders benannt, entfernt oder zusätzlich hinzugefügt wordens ein können.
+pre 
+  | [Dateiname Theme]/
+  br
+  |  ├── config/
+  br
+  |  │   ├── _buttons.example.scss
+  br
+  |  │   ├── _colors.example.scss
+  br
+  |  │   ├── _layout.example.scss
+  br
+  |  │   └── _typography.example.scss
+  br
+  |  ├── mixins/
+  br
+  |  │   ├── _buttons.example.scss
+  br
+  |  │   └── _typography.scss
+  br
+  |  ├── patterns/
+  br
+  |  │   ├── _buttons.scss
+  br
+  |  │   ├── _code.scss
+  br
+  |  │   ├── _layout.scss
+  br
+  |  │   ├── _lists.scss
+  br
+  |  │   └── _typography.scss
+  br
+  |  ├── vendor/
+  br
+  |  └── style.scss
+p Füge nun den Theme-Ordner deinem Projekt hinzu.
+p Um das Theme zu verwenden, müssen alle Dateien im config-Ordner, die einer Beispieldatei ([Dateiname].example.scss) haben erstellt werden müssen, um das Theme zu verwenden (Nähere Erkärungen hierzu im jeweiligen Theme). Alle anderen Dateien solltest du für die einfache Aktualisierung unverändert lassen.  
+p Hier kannst du nun deine individuellen Anpassungen am Theme vornehmen.
+p Anschließend musst du in deiner Projekteigenen Sass-Datei das Framework inkludieren.
+pre
+  code.html
+    = '@import "[Pfad zum Theme-Ordner]/style"'
+p Jetzt kannst du das Theme vollständig verwenden.
