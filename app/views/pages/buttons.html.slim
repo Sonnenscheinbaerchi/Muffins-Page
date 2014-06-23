@@ -7,44 +7,66 @@ p Um schnell Buttons zu nutzen, kannst du die bereits im Theme vordefinierten Bu
 .highlight.row
   pre.col-xs-12
     code.html
-      = '<a href="#" class="btn btn-default">Default</a>'
+      = '<a href="#" class="btn default">Default</a>'
       br
-      = '<a href="#" class="btn btn-primary">Primary</a>'
+      = '<a href="#" class="btn primary">Primary</a>'
       br
-      = '<a href="#" class="btn btn-success">Success</a>'
+      = '<a href="#" class="btn success">Success</a>'
       br
-      = '<a href="#" class="btn btn-info">Info</a>'
+      = '<a href="#" class="btn info">Info</a>'
       br
-      = '<a href="#" class="btn btn-warning">Warning</a>'
+      = '<a href="#" class="btn warning">Warning</a>'
       br
-      = '<a href="#" class="btn btn-danger">Danger</a>'
+      = '<a href="#" class="btn danger">Danger</a>'
       br
-      = '<a href="#" class="btn btn-link">Link</a>'
+      = '<a href="#" class="btn link">Link</a>'
       br
   .example.col-xs-12
-    a.btn.btn-default href="#" Default
-    a.btn.btn-primary href="#" Primary
-    a.btn.btn-success href="#" Success
-    a.btn.btn-info href="#" Info
-    a.btn.btn-warning href="#" Warning
-    a.btn.btn-danger href="#" Danger
-    a.btn.btn-link href="#" Link
+    a.btn.default href="#" Default
+    a.btn.primary href="#" Primary
+    a.btn.success href="#" Success
+    a.btn.info href="#" Info
+    a.btn.warning href="#" Warning
+    a.btn.danger href="#" Danger
+    a.btn.link href="#" Link
+h4 Button Größen
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<a href="#" class="btn default small">Default small</a>'
+      br
+      = '<a href="#" class="btn primary small">Primary small</a>'
+      br
+      = '<a href="#" class="btn default">Default normal</a>'
+      br
+      = '<a href="#" class="btn primary">Primary normal</a>'
+      br
+      = '<a href="#" class="btn default big">Default big</a>'
+      br
+      = '<a href="#" class="btn primary big">Primary big</a>'
+  .example.col-xs-12
+    a.btn.default.small href="#" Default Small
+    a.btn.primary.small href="#" Primary Small
+    a.btn.default href="#" Default normal
+    a.btn.primary href="#" Primary normal
+    a.btn.default.big href="#" Default Big
+    a.btn.primary.big href="#" Primary Big
 h4 Button Stati
 .highlight.row
   pre.col-xs-12
     code.html
-      = '<a href="#" class="btn btn-default active">Default Active</a>'
+      = '<a href="#" class="btn default active">Default Active</a>'
       br
-      = '<a href="#" class="btn btn-primary active">Primary active</a>'
+      = '<a href="#" class="btn primary active">Primary active</a>'
       br
-      = '<a href="#" class="btn btn-default disabled">Default disabled</a>'
+      = '<a href="#" class="btn default disabled">Default disabled</a>'
       br
-      = '<a href="#" class="btn btn-primary disabled">Primary disabled</a>'
+      = '<a href="#" class="btn primary disabled">Primary disabled</a>'
   .example.col-xs-12
-    a.btn.btn-default.active href="#" Default Active
-    a.btn.btn-primary.active href="#" Primary Active
-    a.btn.btn-default.disabled href="#" Default Disabled
-    a.btn.btn-primary.disabled href="#" Primary Disabled
+    a.btn.default.active href="#" Default Active
+    a.btn.primary.active href="#" Primary Active
+    a.btn.default.disabled href="#" Default Disabled
+    a.btn.primary.disabled href="#" Primary Disabled
 
 h3 vordefinierte Größen
 h3 eigene Buttons
@@ -66,6 +88,10 @@ ul
 h4 button-size
 p Du kannst über das Mixin "button-size" einfach neue Button Größen anlegen. Hierfür musst du dem Mixin folgende Variablen übergeben:
 ul
+  li
+    strong padding
+    br
+    | Innenabstand
   li 
     strong font-size
     br
