@@ -1,25 +1,25 @@
-h2 Grid
+h1 Grid
 
 p  Muffins enthält standardmäßig ein 12-Spalten responisve Grid, mit dem mobile First Ansatz. Das Grid kann sich an den Viewport oder an einer maximalen Breiten ausrichten. Das besondere am Grid des Muffin.Framework ist, dass du sowohl die Anzahl der Breakpoints als auch die Anzahl der Spalten und deren Abstände vollständig über Variablen definieren kannst. So kannst du dir einfach und schnell dein eigenes Grid erstellen.
 
-h3 Variablen
-h4 grid-max-width
+h2 Variablen
+h3 grid-max-width
 p Die maximale Breite des grids kann in pixel, em oder auch Prozenten angegeben werden. 
 p = "default: 1440px"
-h4  space
+h3  space
 p Der Abstand zwischen den Spalten kann in pixel, em oder auch Prozente angegeben werden. 
 p = "default: 8px"
-h4 total-columns
+h3 total-columns
 p Die Anzahl der Spalten ist variabel. Somit kannst du dein individuelles Grid aufbauen und es deinen Gegebenheiten vollständig anpassen. 
 p = "default: 12"
-h4 grid-breakpoints
+h3 grid-breakpoints
 p 
   | Im Muffin-Framwork kannst du nicht nur die Anzahl der Breakpoints bestimmen, du kannst auchganz einfach die Klassennamen definieren. Du möchtest keine Einteilung in Größennamen sondern in Devicenamen? Kein Problem! 
   br
   | Gib einfach deinen Klassennamen, die min-width und die max-width an und schon kannst du dein eigenes Grid generieren.
 p = "default: ('xl', 1261px, null), ('lg', 961px, null), ('md', 641px, null), ('xl', 321px, null), ('xs', 220px, null)"
 
-h3 Das Standard Grid
+h2 Das Standard Grid
 p Die Standard  Grid Klassen setzen sich aus dem Präfix "col", desKlassennamens und der Spaltenanzahl zusammen (dies werden durch "-" separiert), z.B. ".col-xs-6"
 .highlight.row
   pre.col-xs-12
@@ -209,7 +209,7 @@ p Die Standard  Grid Klassen setzen sich aus dem Präfix "col", desKlassennamens
         = '.col-xs-11'
       .col-xs-1
         = '.col-xs-1'
-h3 Nested Grid
+h2 Nested Grid
 p Alle Grid Klassen kannst du beliebig verschachteln. Hierfür musst du nur eine neue "row" anlegen.
 .highlight.row
   pre.col-xs-12
@@ -251,9 +251,9 @@ p Alle Grid Klassen kannst du beliebig verschachteln. Hierfür musst du nur eine
             = 'col-xs-6'
           .col-xs-6
             = 'col-xs-6'
-h3 Visibilty Classes
+h2 Visibilty Classes
 p Mit Visibilty CLasses kannst du Elemente abhängig der Bildschirmgröße und  Orientation und ein- und ausblenden.
-h4 Bildschirmgrößen Detection
+h3 Bildschirmgrößen Detection
 .highlight.row
   pre.col-xs-12
     code.html
@@ -270,7 +270,7 @@ h4 Bildschirmgrößen Detection
         p = '.col-x-12 .hide-md'
       .col-xs-12.hide-xs.show-md
         p = '.col-xs-12 .hide-xs .show-md'
-h4 Orientation Detection
+h3 Orientation Detection
 .highlight.row
   pre.col-xs-12
     code.html
@@ -287,7 +287,7 @@ h4 Orientation Detection
         p = '.col-x-12 .hide-for-landscape (is portrait)'
       .col-xs-12.hide-for-portrait
         p = '.col-xs-12 .hide-for-portrait (is landscape)'
-h3 Ordering Classes
+h2 Ordering Classes
 p Mit den Ordering Classes kannst du die Reihenfolge deiner Container anpassen, ohne den HTML Code zu verändern.
 .highlight.row
   pre.col-xs-12
