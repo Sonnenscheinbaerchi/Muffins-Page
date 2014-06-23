@@ -9,11 +9,18 @@ p mit den Klassen .left, .right  und clearfix können Elemente schnell und einfa
     code.html
       = '<div class="clearfix">'
       br
-      = '   <a class="btn left">.left</a>'
+      = '   <a class="btn primary-btn left">.left</a>'
       br
-      = '   <a class="btn right">.right</a>'
+      = '   <a class="btn primary-btn right">.right</a>'
       br
       = '</div>'
   .example.col-xs-12
-    a.btn.left = " .left"
-    a.btn.right= ".right"
+    .clearfix
+      a.btn.primary-btn.left = " .left"
+      a.btn.primary-btn.right= ".right"
+h3 Hide Classes
+p Um ein Element auszublenden und zu verstecken kannst du eifach die KLasse .hide nutzen. 
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<div class="hide"></div>'
