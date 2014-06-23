@@ -1,6 +1,8 @@
 h1 Typography
+
+
 h2 Überschriften
-p 
+
 .highlight.row
   pre.col-xs-12
     code.html
@@ -10,7 +12,7 @@ p
       br
       = '<h3>Überschrift 3</h3>'
       br
-      = '<h4>Überschrift 4</h4>'
+      = '<h3>Überschrift 4</h4>'
       br
       = '<h5>Überschrift 5</h5>'
       br
@@ -23,3 +25,224 @@ p
     h4 Überschrift 4
     h5 Überschrift 5
     h6 Überschrift 6
+
+
+h2 Body Text
+
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Cupcake ipsum dolor sit. Amet cake fruitcake topping pie brownie pudding croissant sweet roll. Gingerbread lollipop soufflé. Candy I love cotton candy. Candy canes gummies I love chocolate bar gingerbread. Sweet roll jelly danish applicake jujubes tiramisu. Dessert cupcake soufflé I love marshmallow cotton candy jelly jujubes. Tiramisu jelly biscuit bear claw lemon drops I love. Cupcake macaroon carrot cake cheesecake jelly-o caramels jujubes chocolate cake. Halvah halvah chocolate bar chocolate cake I love I love toffee marshmallow cotton candy. Chupa chups biscuit gummi bears sweet roll biscuit. Chupa chups muffin jelly-o danish cake bonbon jelly-o chupa chups.</p>'
+      br
+      = '<p> Dragée biscuit applicake. Apple pie lemon drops tiramisu jelly gummi bears. Sweet roll ice cream sesame snaps sugar plum sugar plum toffee pudding. Sugar plum I love jelly-o halvah chupa chups I love. Jelly tootsie roll liquorice I love chocolate cheesecake I love brownie. Bear claw tiramisu jelly beans unerdwear.com gummies apple pie cotton candy. Chocolate cake chocolate bar marzipan jelly beans. Halvah donut chocolate I love lollipop toffee dragée. I love jelly beans powder I love tiramisu chocolate bar jelly-o. Jelly beans I love cake cupcake pudding marzipan gummi bears cupcake. Jelly beans cheesecake pie marshmallow pudding I love muffin marzipan gummi bears. Gummies powder applicake. Cheesecake wafer croissant.</p>'
+  .example.col-xs-12
+    p Cupcake ipsum dolor sit. Amet cake fruitcake topping pie brownie pudding croissant sweet roll. Gingerbread lollipop soufflé. Candy I love cotton candy. Candy canes gummies I love chocolate bar gingerbread. Sweet roll jelly danish applicake jujubes tiramisu. Dessert cupcake soufflé I love marshmallow cotton candy jelly jujubes. Tiramisu jelly biscuit bear claw lemon drops I love. Cupcake macaroon carrot cake cheesecake jelly-o caramels jujubes chocolate cake. Halvah halvah chocolate bar chocolate cake I love I love toffee marshmallow cotton candy. Chupa chups biscuit gummi bears sweet roll biscuit. Chupa chups muffin jelly-o danish cake bonbon jelly-o chupa chups.
+    p Dragée biscuit applicake. Apple pie lemon drops tiramisu jelly gummi bears. Sweet roll ice cream sesame snaps sugar plum sugar plum toffee pudding. Sugar plum I love jelly-o halvah chupa chups I love. Jelly tootsie roll liquorice I love chocolate cheesecake I love brownie. Bear claw tiramisu jelly beans unerdwear.com gummies apple pie cotton candy. Chocolate cake chocolate bar marzipan jelly beans. Halvah donut chocolate I love lollipop toffee dragée. I love jelly beans powder I love tiramisu chocolate bar jelly-o. Jelly beans I love cake cupcake pudding marzipan gummi bears cupcake. Jelly beans cheesecake pie marshmallow pudding I love muffin marzipan gummi bears. Gummies powder applicake. Cheesecake wafer croissant.
+
+
+h2 Links
+
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Cupcake ipsum dolor sit. <a href="#">Amet cake</a> fruitcake topping pie brownie pudding croissant sweet roll. Gingerbread lollipop soufflé. Candy I love cotton candy.</p>'
+  .example.col-xs-12
+    p 
+      | Cupcake ipsum dolor sit. 
+      a href="#" Amet cake 
+      | fruitcake topping pie brownie pudding croissant sweet roll. 
+
+
+h2 Quotes
+
+h3 Default Blockquotes
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<blockqoute>'
+      br
+      = '  <p> Apple pie lemon drops tiramisu jelly gummi bears. </p>'
+      br
+      = '</blockqoute>'
+  .example.col-xs-12
+    blockquote
+      p Apple pie lemon drops tiramisu jelly gummi bears.
+
+h3 Blockqoutes mit Autor
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<blockqoute>'
+      br
+      = '  <p> Apple pie lemon drops tiramisu jelly gummi bears. </p>'
+      br
+      = '  <footer> Some really cool person </footer>'
+      br
+      = '</blockqoute>'
+  .example.col-xs-12
+    blockquote
+      p Apple pie lemon drops tiramisu jelly gummi bears.
+      footer Some really cool person
+
+h3 Inline Quotes
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Apple pie lemon drops <q>tiramisu jelly</q> gummi bears. </p>'
+  .example.col-xs-12
+    p 
+      | Apple pie lemon drops 
+      q tiramisu jelly
+      |  gummi bears.
+
+h2 Emphasis
+h3 Small Text
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Apple pie <small> lemon drops </small> tiramisu jelly gummi bears.'
+  .example.col-xs-12
+    p 
+      | Apple pie 
+      small lemon drops 
+      | tiramisu jelly gummi bears.
+
+h3 Big Text
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Apple pie <big> lemon drops </big> tiramisu jelly gummi bears.'
+  .example.col-xs-12
+    p 
+      | Apple pie 
+      big lemon drops 
+      | tiramisu jelly gummi bears.
+
+h3 Bold Text
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Apple pie <strong> lemon drops </strong> tiramisu jelly gummi bears.'
+  .example.col-xs-12
+    p 
+      | Apple pie 
+      strong lemon drops 
+      | tiramisu jelly gummi bears.
+
+h3 Italic Text
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Apple pie <em> lemon drops </em> tiramisu jelly gummi bears.'
+  .example.col-xs-12
+    p 
+      | Apple pie 
+      em lemon drops 
+      | tiramisu jelly gummi bears.
+      
+h3 Deleted Text
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Apple pie <del> lenon drops </del> tiramisu jelly gummi bears.'
+  .example.col-xs-12
+    p 
+      | Apple pie 
+      del lemon drops 
+      | tiramisu jelly gummi bears
+      
+h3 Inserted Text
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Apple pie <ins> lemon drops </ins> tiramisu jelly gummi bears.'
+  .example.col-xs-12
+    p 
+      | Apple pie 
+      ins lemon drops 
+      | tiramisu jelly gummi bears.
+
+h3 Superscript Text
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Apple pie <sup> lemon drops </sup> tiramisu jelly gummi bears.'
+  .example.col-xs-12
+    p 
+      | Apple pie 
+      sup lemon drops 
+      | tiramisu jelly gummi bears.
+      
+h3 Subscript Text
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Apple pie <sub> lemon drops </sub> tiramisu jelly gummi bears.'
+  .example.col-xs-12
+    p 
+      | Apple pie 
+      sub lemon drops 
+      | tiramisu jelly gummi bears.
+      
+h3 Mark 
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Apple pie <mark> lemon drops </mark> tiramisu jelly gummi bears.'
+  .example.col-xs-12
+    p 
+      | Apple pie 
+      mark lemon drops 
+      | tiramisu jelly gummi bears.
+      
+h3 Code 
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Apple pie <code> lemon drops </code> tiramisu jelly gummi bears.'
+  .example.col-xs-12
+    p 
+      | Apple pie 
+      code lemon drops 
+      | tiramisu jelly gummi bears.
+      
+h3 Cite
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Apple pie <cite> lemon drops </cite> tiramisu jelly gummi bears.'
+  .example.col-xs-12
+    p 
+      | Apple pie 
+      cite lemon drops 
+      | tiramisu jelly gummi bears.
+      
+h3 Acronym 
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<p> Apple pie <abbr title="Lemon Drops"> LD </abbr> tiramisu jelly gummi bears.'
+  .example.col-xs-12
+    p 
+      | Apple pie 
+      abbr title="Lemon Drops" LD
+      |  tiramisu jelly gummi bears.      
+
+h2 Alignment Classes
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<div class="clearfix">'
+      br
+      = '  <p class=" text left"> left </p>'
+      br
+      = '  <p class=" text center"> center </p>'
+      br
+      = '  <p class=" text right"> right </p>'
+      br
+      = '</div>'
+  .example.col-xs-12
+    .clearfix
+      p.text.left Sweet roll jujubes oat cake cookie chocolate bar applicake icing. Cookie sesame snaps cheesecake chupa chups fruitcake lemon drops sesame snaps. Pie cheesecake fruitcake liquorice brownie. Cupcake sugar plum jelly bonbon croissant soufflé fruitcake. Tart tart sweet roll biscuit donut croissant cake dragée. Chocolate liquorice biscuit. 
+      p.text.center Sweet roll jujubes oat cake cookie chocolate bar applicake icing. Cookie sesame snaps cheesecake chupa chups fruitcake lemon drops sesame snaps. Pie cheesecake fruitcake liquorice brownie. Cupcake sugar plum jelly bonbon croissant soufflé fruitcake. Tart tart sweet roll biscuit donut croissant cake dragée. Chocolate liquorice biscuit. 
+      p.text.right Sweet roll jujubes oat cake cookie chocolate bar applicake icing. Cookie sesame snaps cheesecake chupa chups fruitcake lemon drops sesame snaps. Pie cheesecake fruitcake liquorice brownie. Cupcake sugar plum jelly bonbon croissant soufflé fruitcake. Tart tart sweet roll biscuit donut croissant cake dragée. Chocolate liquorice biscuit. 
