@@ -1,0 +1,80 @@
+h2 Buttons
+
+p  
+
+h3 vordefinierte Buttons
+p Um schnell Buttons zu nutzen, kannst du die bereits im Theme vordefinierten Buttons nutzen.
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<a href="#" class="btn btn-default">Default</a>'
+      br
+      = '<a href="#" class="btn btn-primary">Primary</a>'
+      br
+      = '<a href="#" class="btn btn-success">Success</a>'
+      br
+      = '<a href="#" class="btn btn-info">Info</a>'
+      br
+      = '<a href="#" class="btn btn-warning">Warning</a>'
+      br
+      = '<a href="#" class="btn btn-danger">Danger</a>'
+      br
+      = '<a href="#" class="btn btn-link">Link</a>'
+      br
+  .example.col-xs-12
+    a.btn.btn-default href="#" Default
+    a.btn.btn-primary href="#" Primary
+    a.btn.btn-success href="#" Success
+    a.btn.btn-info href="#" Info
+    a.btn.btn-warning href="#" Warning
+    a.btn.btn-danger href="#" Danger
+    a.btn.btn-link href="#" Link
+h4 Button Stati
+.highlight.row
+  pre.col-xs-12
+    code.html
+      = '<a href="#" class="btn btn-default active">Default Active</a>'
+      br
+      = '<a href="#" class="btn btn-primary active">Primary active</a>'
+      br
+      = '<a href="#" class="btn btn-default disabled">Default disabled</a>'
+      br
+      = '<a href="#" class="btn btn-primary disabled">Primary disabled</a>'
+  .example.col-xs-12
+    a.btn.btn-default.active href="#" Default Active
+    a.btn.btn-primary.active href="#" Primary Active
+    a.btn.btn-default.disabled href="#" Default Disabled
+    a.btn.btn-primary.disabled href="#" Primary Disabled
+
+h3 vordefinierte Größen
+h3 eigene Buttons
+h4 button-variant
+p Du kannst über das Mixin "button-variant" einfach neue Button Variationen anlegen. Hierfür musst du dem Mixin folgende Variablen übergeben:
+ul
+  li 
+    strong color
+    br
+    | Schriftfarbe
+  li
+    strong background
+    br
+    | Hintergrundfarbe
+  li
+    strong border
+    br
+    | Rahmenfarbe
+h4 button-size
+p Du kannst über das Mixin "button-size" einfach neue Button Größen anlegen. Hierfür musst du dem Mixin folgende Variablen übergeben:
+ul
+  li 
+    strong font-size
+    br
+    | Schriftgröße
+  li
+    strong line-height
+    br
+    | Zeilengröße
+  li 
+    strong border-radius
+    br
+    | Rahmenradius
