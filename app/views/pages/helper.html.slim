@@ -7,15 +7,18 @@ h2 Classes
 h3 Floating 
 p 
   | mit den Klassen 
-  code.highlight .left
+  code .left
   | , 
-  code.highlight .right
+  code .right
   |   und 
-  code.highlight .clearfix
+  code .clearfix
   |  können Elemente schnell und einfach positioniert werden.
-.highlight.row
-  pre.col-xs-12
-    code.html
+
+h6 Usage
+pre
+  code
+    header HTML
+    p
       = '<div class="clearfix">'
       br
       = '   <a class="btn primary left">.left</a>'
@@ -23,38 +26,41 @@ p
       = '   <a class="btn primary right">.right</a>'
       br
       = '</div>'
-  .example.col-xs-12
-    .clearfix
-      a.btn.primary.left = " .left"
-      a.btn.primary.right= ".right"
+h6 Example
+.example
+  .clearfix
+    a.btn.primary.left = " .left"
+    a.btn.primary.right= ".right"
 
 h3 Hide 
 h4 Hide Elemente
 p 
   | Um ein Element auszublenden und zu verstecken kannst du einfach die Klasse 
-  code.highlight .hide
+  code .hide
   |  nutzen. 
-.highlight.row
-  pre.col-xs-12
-    code.html
-      = '<div class="hide"></div>'
+h6 Usage
+pre
+  code
+    header HTML
+    p = '<div class="hide"></div>'
 h4 Hide Text
 p 
   | Um Text auszublenden ind zu verstecken kannst du einfach die Klasse 
-  code.highlight .hide-text
+  code .hide-text
   |  nutzen.
 
 h2 Mixins
 
 h3 Size 
 p 
-| Um schnell und einfach die Größen eines Elementes festzulegen, kannst du das mixin 
-code.highlight size($width, $height: $width)
-|  nutzen.
-.highlight.row
-  pre.col-xs-12
-    p Usage
-    code.scss
+  | Um schnell und einfach die Größen eines Elementes festzulegen, kannst du das mixin 
+  code size($width, $height: $width)
+  |  nutzen.
+h6 Usage
+pre
+  code.scss
+    header SCSS
+    p
       = 'div1 {'
       br
       = '  @include size(50px);'
@@ -68,8 +74,11 @@ code.highlight size($width, $height: $width)
       = '}'
       br
       br
-    p Output
-    code.css
+h6 Output
+pre
+  code.css
+    header CSS
+    p
       = 'div1 {'
       br
       = '  width: 50px;'
@@ -89,37 +98,37 @@ code.highlight size($width, $height: $width)
 h3 Positionierung 
 p
   | Um schnell und einfach Elemnte zu positionieren kannst du die mixins 
-  code.highlight absolute($args)
+  code absolute($args)
   | , 
-  code.highlight fixed($args)
+  code fixed($args)
   | und 
-  code.highlight relative($args)
+  code relative($args)
   |  nutzen.
 p 
   | in $args kannst du alle Offsets angeben, bspw.  
-  code.highlight left 1em top 1.5em
+  code left 1em top 1.5em
   |  oder 
-  code.highlight top 5px right 10px bottom 15px left 10px
+  code top 5px right 10px bottom 15px left 10px
   | .
 
 h3 Schriftgrößen in Rem
 p 
   | Mit dem 
-  code.highlight font-size-rem($size)
+  code font-size-rem($size)
   |  und 
-  code.highlight line-height-rem($size)
+  code line-height-rem($size)
   |  Mixins kannst du einfach px in rem umwandeln um hast sogar noch den px-wert als Fallback gegeben.
 
 h3 Hintergrundbilder
 p 
   | Retina-Hintergrundbilder machen uns öfter Probleme.  Mit Muffins ist das kein Problem mehr. Das Mixin 
-  code.highlight background-image($name, $size:false)
+  code background-image($name, $size:false)
   | hilft dir dabei ganz einfach Retina Hintergrundbilder einzubinden.
 p 
   | In der "_helper.scss" im "config" Ordner kannst du deinen Bilddateipfad(
-  code.highlight $image-path
+  code $image-path
   | ) , deine Dateiendung(
-  code.highlight $image-extension
+  code $image-extension
   | ) und deinen Retina-Suffix (
-  code.highlight $retina-suffix
+  code $retina-suffix
   | ) konfigurieren.

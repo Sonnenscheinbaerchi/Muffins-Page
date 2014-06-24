@@ -2,9 +2,11 @@ h1 Lists
 
 h2 Unordered list
 h3 Disc Style
-.highlight.row
-  pre.col-xs-12
-    code.html
+h6 Usage
+pre
+  code
+    header HTML
+    p
       = '<ul class="disc">'
       br
       = '  <li> Cupcake ipsum dolor sit. </li>'
@@ -26,21 +28,24 @@ h3 Disc Style
       = '  <li> Candy I love cotton candy. </li>'
       br
       = '</ul>'
-  .example.col-xs-12
-    ul.disc
-      li Cupcake ipsum dolor sit.
-      li Dragée biscuit applicake.
-      li
-        | Cupcake macaroon carrot .
-        ul
-          li Chupa chups biscuit gummi bears.
-          li Cake cheesecake jelly-o caramels jujubes chocolate cake.
-      li Candy I love cotton candy.
+h6 Output
+.example
+  ul.disc
+    li Cupcake ipsum dolor sit.
+    li Dragée biscuit applicake.
+    li
+      | Cupcake macaroon carrot .
+      ul
+        li Chupa chups biscuit gummi bears.
+        li Cake cheesecake jelly-o caramels jujubes chocolate cake.
+    li Candy I love cotton candy.
 
 h3 Square Style
-.highlight.row
-  pre.col-xs-12
-    code.html
+h6 Usage
+pre
+  code
+    header HTML
+    p
       = '<ul class="square">'
       br
       = '  <li> Cupcake ipsum dolor sit. </li>'
@@ -62,21 +67,24 @@ h3 Square Style
       = '  <li> Candy I love cotton candy. </li>'
       br
       = '</ul>'
-  .example.col-xs-12
-    ul.square
-      li Cupcake ipsum dolor sit.
-      li Dragée biscuit applicake.
-      li
-        | Cupcake macaroon carrot .
-        ul
-          li Chupa chups biscuit gummi bears.
-          li Cake cheesecake jelly-o caramels jujubes chocolate cake.
-      li Candy I love cotton candy.
+h6 Output
+.example
+  ul.square
+    li Cupcake ipsum dolor sit.
+    li Dragée biscuit applicake.
+    li
+      | Cupcake macaroon carrot .
+      ul
+        li Chupa chups biscuit gummi bears.
+        li Cake cheesecake jelly-o caramels jujubes chocolate cake.
+    li Candy I love cotton candy.
 
 h3 No Style
-.highlight.row
-  pre.col-xs-12
-    code.html
+h6 Usage
+pre
+  code
+    header HTML
+    p
       = '<ul class="no-style">'
       br
       = '  <li> Cupcake ipsum dolor sit. </li>'
@@ -98,21 +106,24 @@ h3 No Style
       = '  <li> Candy I love cotton candy. </li>'
       br
       = '</ul>'
-  .example.col-xs-12
-    ul.no-style
-      li Cupcake ipsum dolor sit.
-      li Dragée biscuit applicake.
-      li
-        | Cupcake macaroon carrot .
-        ul
-          li Chupa chups biscuit gummi bears.
-          li Cake cheesecake jelly-o caramels jujubes chocolate cake.
-      li Candy I love cotton candy.
+h6 Output
+.example
+  ul.no-style
+    li Cupcake ipsum dolor sit.
+    li Dragée biscuit applicake.
+    li
+      | Cupcake macaroon carrot .
+      ul
+        li Chupa chups biscuit gummi bears.
+        li Cake cheesecake jelly-o caramels jujubes chocolate cake.
+    li Candy I love cotton candy.
 
 h2 Ordered list
-.highlight.row
-  pre.col-xs-12
-    code.html
+h6 Usage
+pre
+  code
+    header HTML
+    p
       = '<ol>'
       br
       = '  <li> Cupcake ipsum dolor sit. </li>'
@@ -134,20 +145,23 @@ h2 Ordered list
       = '  <li> Candy I love cotton candy. </li>'
       br
       = '</ol>'
-  .example.col-xs-12
-    ol
-      li Cupcake ipsum dolor sit.
-      li Dragée biscuit applicake.
-      li
-        | Cupcake macaroon carrot .
-        ol
-          li Chupa chups biscuit gummi bears.
-          li Cake cheesecake jelly-o caramels jujubes chocolate cake.
-      li Candy I love cotton candy.
+h6 Output
+.example
+  ol
+    li Cupcake ipsum dolor sit.
+    li Dragée biscuit applicake.
+    li
+      | Cupcake macaroon carrot .
+      ol
+        li Chupa chups biscuit gummi bears.
+        li Cake cheesecake jelly-o caramels jujubes chocolate cake.
+    li Candy I love cotton candy.
 h2 Definition list
-.highlight.row
-  pre.col-xs-12
-    code.html
+h6 Usage
+pre
+  code
+    header HTML
+    p
       = '<dl>'
       br
       = '  <dt> Cupcake ipsum dolor sit. </dt>'
@@ -155,14 +169,17 @@ h2 Definition list
       = '  <dd> Amet cake fruitcake topping pie brownie pudding croissant sweet roll. Gingerbread lollipop soufflé. Candy I love cotton candy. Candy canes gummies I love chocolate bar gingerbread.  </dd>'
       br
       = '</dl>'
-  .example.col-xs-12
-    dl
-      dt Cupcake ipsum dolor sit.
-      dd Amet cake fruitcake topping pie brownie pudding croissant sweet roll. Gingerbread lollipop soufflé. Candy I love cotton candy. Candy canes gummies I love chocolate bar gingerbread. 
+h6 Output
+.example
+  dl
+    dt Cupcake ipsum dolor sit.
+    dd Amet cake fruitcake topping pie brownie pudding croissant sweet roll. Gingerbread lollipop soufflé. Candy I love cotton candy. Candy canes gummies I love chocolate bar gingerbread. 
 h2 Adresse
-.highlight.row
-  pre.col-xs-12
-    code.html
+h6 Usage
+pre
+  code
+    header HTML
+    p
       = '<address>'
       br
       = '  <li class="name">Soufflé sesame</li>'
@@ -176,14 +193,15 @@ h2 Adresse
       = '  <li class="email"><a href="#">s.sesame@example.com</a></li>'
       br
       = '</address>'
-  .example.col-xs-12
-    address
-      li.name Soufflé sesame
-      li.street-address 789 Cookie Ave.
-      li.locality Candy City
-      li
-        span.state Marzipan
-        | , 
-        span.zip 12345
-      li.email
-        a href="#" s.sesame@example.com
+h6 Output
+.example
+  address
+    li.name Soufflé sesame
+    li.street-address 789 Cookie Ave.
+    li.locality Candy City
+    li
+      span.state Marzipan
+      | , 
+      span.zip 12345
+    li.email
+      a href="#" s.sesame@example.com

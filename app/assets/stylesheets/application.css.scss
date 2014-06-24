@@ -21,3 +21,22 @@
  @import "default-theme/style.scss";
 
 
+
+.example{
+  margin: $space 0;
+  padding: $space;
+
+  [class^="col-"] {
+    border: 2px solid darken($color-brand-secondary, 10%);
+    text-align: center;
+    min-height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    background-color: $color-brand-secondary;
+  }
+
+  .btn {
+    margin-left: ($space / 2);
+    margin-right: ($space / 2);
+  }
+}
