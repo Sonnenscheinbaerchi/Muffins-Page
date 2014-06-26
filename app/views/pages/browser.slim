@@ -1,0 +1,94 @@
+h1 Browserkompatibiltät
+
+
+h2 Browser ohne media queries
+p Muffins baut auf mobile-first. Um auch alte Browsern, die noch keine Media queries unterstützen (IE < 9) supporten zu können und eine "Web-Ansicht" zu gewährleisten, kann mit Muffins eine Extra Stylesheet Datei erstellt werden, die keine Media queries beinhaltet und noch dazu die "mobile-first" angaben dennoch für die Webansicht überschreibt.
+
+h3 Stylesheet Datei erzeugen
+p 
+  | Um die Stylesheet Datei ohne Media queries zu erzeugen, musst du eine neue 
+  code .scss
+  |  Datei anlegen. In dieser überschreibst du die Variable 
+  code $fix-mqs
+  |  mit 
+  code true
+  | . Nun musst doch noch die Standard-Styles importieren. Um es einfacher zu halten und doppeltes pflegen zu vermeiden, kannst du hier einfach deine 
+  code style.scss
+  |  importieren.
+h3 Mixin nutzen
+p 
+  | Natürlich kannst du das Mixin 
+  code fix-media-queries()
+  |  auch in deinen eigenen Styles verwenden. Hierbei ist zu beachten, dass du eine 
+  code $min-width
+  |  sowie auch eine
+  code $max-width
+  |  (default: false) übergeben kannst.  
+
+h6 Usage
+pre
+  code
+    header SCSS
+    p
+      = '.content {'
+      br
+      = '  float: left;'
+      br
+      = '  width: 60%;'
+      br
+      = '  background-color: red;'
+      br
+      br
+      = '  @include fix-media-queries (350px) {'
+      br
+      = '    background-color: green;'
+      br
+      = '  }'
+      br
+      br
+      = '  @include fix-media-queries (496px, 1024px) {'
+      br
+      = '    background-color: blue;'
+      br
+      = '  }'
+      br
+      = '}'
+
+
+h2 alte Browser
+p Alte Browser (z.B.: IE < 9) benötigen manchmal ein anderes Stylesheet. 
+p 
+  | Mit Muffins kannst du diese Anweisungen direkt mit in deine Sass-Dateien inkludieren. Mit dem Mixin 
+  code old-browser()
+  |  kannst du explizit Anweisungen für alte Browser erstellen, die du in einer extra Stylesheet-Datei separieren kannst.
+h3 Anwendung
+h6 Usage
+pre 
+  code
+    header SCSS
+    p
+      = '.content {'
+      br
+      = '  width: 80%;'
+      br
+      = '  margin: 0 auto;'
+      br
+      br
+      = '  @include old-browser {'
+      br
+      = '    zoom: 1;'
+      br
+      = '    whatever-you-need: comes here;'
+      br
+      = '  }'
+      br
+      = '}'
+h3 Stylesheet Datei erzeugen
+p 
+  | Hierfür musst du einfach eine neue Sass-Datei anlegen und die Variable
+  code $old-browser
+  | auf
+  code true
+  |  setzen. Anschließend die Standard-Style mit
+  code @import "style";
+  |  importieren und schon wird eine Stylesheet-Datei für alte Browser erzeugt.
