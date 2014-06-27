@@ -1,18 +1,18 @@
 h1 Helper
 
-p  Muffins enthält standardmäßig einige Hilfs-Klassen.
+p  muffins by default contains some helper classes.
 
 h2 Classes
 
 h3 Floating 
 p 
-  | mit den Klassen 
+  | With the classes
   code .left
   | , 
   code .right
-  |   und 
+  |   and 
   code .clearfix
-  |  können Elemente schnell und einfach positioniert werden.
+  |  elements can be positioned quickly and easily.
 
 h6 Usage
 pre
@@ -26,7 +26,7 @@ pre
       = '   <a class="btn primary right">.right</a>'
       br
       = '</div>'
-h6 Example
+h6 Output
 .example
   .clearfix
     a.btn.primary.left = " .left"
@@ -35,9 +35,9 @@ h6 Example
 h3 Hide 
 h4 Hide Elemente
 p 
-  | Um ein Element auszublenden und zu verstecken kannst du einfach die Klasse 
+  | To hide an item you can just use the class 
   code .hide
-  |  nutzen. 
+  |  . 
 h6 Usage
 pre
   code
@@ -45,7 +45,7 @@ pre
     p = '<div class="hide"></div>'
 h4 Hide Text
 p 
-  | Um Text auszublenden ind zu verstecken kannst du einfach die Klasse 
+  | To hide only the text you can just use the class 
   code .hide-text
   |  nutzen.
 
@@ -53,9 +53,9 @@ h2 Mixins
 
 h3 Size 
 p 
-  | Um schnell und einfach die Größen eines Elementes festzulegen, kannst du das mixin 
+  | To quickly and easily determine the size of an element, you can use the mixin 
   code size($width, $height: $width)
-  |  nutzen.
+  |  .
 h6 Usage
 pre
   code.scss
@@ -95,40 +95,40 @@ pre
       br
       = '}'
 
-h3 Positionierung 
+h3 Positioning 
 p
-  | Um schnell und einfach Elemnte zu positionieren kannst du die mixins 
+  | To quickly and easily position Elemnte you can use the mixins 
   code absolute($args)
   | , 
   code fixed($args)
-  | und 
+  | and 
   code relative($args)
-  |  nutzen.
+  |  .
 p 
-  | in $args kannst du alle Offsets angeben, bspw.  
+  | in $args you can indicate all offsets, for example,
   code left 1em top 1.5em
-  |  oder 
+  |  or 
   code top 5px right 10px bottom 15px left 10px
   | .
 
-h3 Schriftgrößen in Rem
+h3 Fontsizes in Rem
 p 
-  | Mit dem 
+  | With the
   code font-size-rem($size)
-  |  und 
+  |  and 
   code line-height-rem($size)
-  |  Mixins kannst du einfach px in rem umwandeln um hast sogar noch den px-wert als Fallback gegeben.
+  |  mixins you can easily convert px in rem to have even px value given to a fallback.
 
-h3 Hintergrundbilder
+h3 Background images
 p 
-  | Retina-Hintergrundbilder machen uns öfter Probleme.  Mit Muffins ist das kein Problem mehr. Das Mixin 
+  | Retina backgroud images make us more problems. With muffins that is no longer a problem. The Mixin 
   code background-image($name, $size:false)
-  | hilft dir dabei ganz einfach Retina Hintergrundbilder einzubinden.
+  | helps you easily integrate retina wallpapers.
 p 
-  | In der "_helper.scss" im "config" Ordner kannst du deinen Bilddateipfad(
+  | In the "_helper.scss" in the "config" folder you can see your image file path
   code $image-path
-  | ) , deine Dateiendung(
+  | ) ,  your file extension(
   code $image-extension
-  | ) und deinen Retina-Suffix (
+  | ) uand your retina suffix (
   code $retina-suffix
-  | ) konfigurieren.
+  | ) to configure.

@@ -1,30 +1,28 @@
-h1 Browserkompatibiltät
+h1 Browser compatibility
 
 
-h2 Browser ohne media queries
-p Muffins baut auf mobile-first. Um auch alte Browsern, die noch keine Media queries unterstützen (IE < 9) supporten zu können und eine "Web-Ansicht" zu gewährleisten, kann mit Muffins eine Extra Stylesheet Datei erstellt werden, die keine Media queries beinhaltet und noch dazu die "mobile-first" angaben dennoch für die Webansicht überschreibt.
+h2 Browser without media queries
+p Muffins builds on mobile-first. To even support old browsers that do not yet support media queries (e.g IE > 9) and to ensure a "web view", muffins will create an extra stylesheet that contains no media queries and, moreover, the "mobile-first" statements will be overwritten by the "web view" statements.
+
 
 h3 Stylesheet Datei erzeugen
 p 
-  | Um die Stylesheet Datei ohne Media queries zu erzeugen, musst du eine neue 
+  | To create the style sheet file without media queries, you have to create a new 
   code .scss
-  |  Datei anlegen. In dieser überschreibst du die Variable 
+  |  file. In this you override the variable 
   code $fix-mqs
-  |  mit 
+  |  with 
   code true
-  | . Nun musst doch noch die Standard-Styles importieren. Um es einfacher zu halten und doppeltes pflegen zu vermeiden, kannst du hier einfach deine 
-  code style.scss
-  |  importieren.
+  |  . Well but still have to import the standard styles. To make it easier to hold and nurture avoid double, you can easily import your 
+  code style.scss 
+  |  here.
 h3 Mixin nutzen
 p 
-  | Natürlich kannst du das Mixin 
-  code fix-media-queries()
-  |  auch in deinen eigenen Styles verwenden. Hierbei ist zu beachten, dass du eine 
-  code $min-width
-  |  sowie auch eine
-  code $max-width
-  |  (default: false) übergeben kannst.  
-
+  | Of course you can also use the mixin fix-media-queries() in your own styles. It should be noted that you have a 
+  code $min-width 
+  |  as well as a 
+  code $max-width 
+  |  (default: false).
 h6 Usage
 pre
   code
@@ -55,13 +53,12 @@ pre
       = '}'
 
 
-h2 alte Browser
-p Alte Browser (z.B.: IE < 9) benötigen manchmal ein anderes Stylesheet. 
+h2 old browser
+p AOld browsers (eg IE <9) sometimes require a different style sheet.
 p 
-  | Mit Muffins kannst du diese Anweisungen direkt mit in deine Sass-Dateien inkludieren. Mit dem Mixin 
+  | With muffins you can include these statements directly in your Sass files. The Mixin 
   code old-browser()
-  |  kannst du explizit Anweisungen für alte Browser erstellen, die du in einer extra Stylesheet-Datei separieren kannst.
-h3 Anwendung
+  |  , you can explicitly create statements for old browsers that you can separate in a separate style sheet file.
 h6 Usage
 pre 
   code
@@ -83,12 +80,12 @@ pre
       = '  }'
       br
       = '}'
-h3 Stylesheet Datei erzeugen
+h3 Generate stylesheet file
 p 
-  | Hierfür musst du einfach eine neue Sass-Datei anlegen und die Variable
+  | For this, you just have to create a new Sass file and set the variable 
   code $old-browser
-  | auf
+  |  to 
   code true
-  |  setzen. Anschließend die Standard-Style mit
+  | .  Then import the default style with 
   code @import "style";
-  |  importieren und schon wird eine Stylesheet-Datei für alte Browser erzeugt.
+  |  and even a stylesheet file for old browsers is generated.

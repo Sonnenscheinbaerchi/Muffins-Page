@@ -1,26 +1,25 @@
 h1 Grid
 
-p  Muffins enthält standardmäßig ein 12-Spalten responisve Grid, mit dem mobile First Ansatz. Das Grid kann sich an den Viewport oder an einer maximalen Breiten ausrichten. Das besondere am Grid des Muffins-Framework ist, dass du sowohl die Anzahl der Breakpoints als auch die Anzahl der Spalten und deren Abstände vollständig über Variablen definieren kannst. So kannst du dir einfach und schnell dein eigenes Grid erstellen.
-
-h2 Variablen
+p muffins comes standard with a 12-column repsonsive grid, with the mobile first approach. The grid can be based on the viewport or a maximum widths. The special feature of grid in muffins is that you can define both the number of breakpoints and the number of columns and their distances completely variable. So you can you quickly and easily create your own grid.
+h2 Variables
 h3 grid-max-width
-p Die maximale Breite des grids kann in pixel, em oder auch Prozenten angegeben werden. 
+p The maximum width of the grids can be specified in pixels, em or percentages.
 p = "default: 1440px"
 h3  space
-p Der Abstand zwischen den Spalten kann in pixel, em oder auch Prozente angegeben werden. 
+p The distance between the columns, in pixels, em or percentages are given.
 p = "default: 8px"
 h3 total-columns
-p Die Anzahl der Spalten ist variabel. Somit kannst du dein individuelles Grid aufbauen und es deinen Gegebenheiten vollständig anpassen. 
+p DThe number of columns is variable. Thus you can build your individual grid and adapt it to your situation completely.
 p = "default: 12"
 h3 grid-breakpoints
 p 
-  | Im Muffins-Framwork kannst du nicht nur die Anzahl der Breakpoints bestimmen, du kannst auchganz einfach die Klassennamen definieren. Du möchtest keine Einteilung in Größennamen sondern in Devicenamen? Kein Problem! 
+  | With muffins you can not only determine the number of breakpoints, you can define the class name also quite simple. You want no division in size but in name device name? No problem!
   br
-  | Gib einfach deinen Klassennamen, die min-width und die max-width an und schon kannst du dein eigenes Grid generieren.
+  | Simply enter your class name, the min-width and max-width and you're ready to generate your own grid.
 p = "default: ('xl', 1261px, null), ('lg', 961px, null), ('md', 641px, null), ('xl', 321px, null), ('xs', 220px, null)"
 
-h2 Das Standard Grid
-p Die Standard  Grid Klassen setzen sich aus dem Präfix "col", desKlassennamens und der Spaltenanzahl zusammen (dies werden durch "-" separiert), z.B. ".col-xs-6"
+h2 The default grid
+p The default grid classes are composed of the prefix "col", the class name and the number of columns together (this will be "-" separated), eg . "col-xs-6"
 h6 Usage
 pre
   code
@@ -249,9 +248,9 @@ h6 Output
 
 h2 Nested Grid
 p 
-  | Alle Grid Klassen kannst du beliebig verschachteln. Hierfür musst du nur eine neue 
+  | All Grid classes you can nest arbitrarily. For this, you need only create a new 
   code.highlight row
-  |  anlegen.
+  |  .
 h6 Usage
 pre
   code
@@ -297,9 +296,9 @@ h6 Output
           = 'col-xs-6'
 
 h2 Visibilty Classes
-p Mit Visibilty CLasses kannst du Elemente abhängig der Bildschirmgröße und  Orientation und ein- und ausblenden.
+p With Visibilty classes you can depending of the screen size and orientation and hide elements.
 
-h3 Bildschirmgrößen Detection
+h3 Screen sizes detection
 h6 Usage
 pre
   code
@@ -320,7 +319,7 @@ h6 Output
     .col-xs-12.hide-xs.show-md
       = '.col-xs-12 .hide-xs .show-md'
 
-h3 Orientation Detection
+h3 Orientation detection
 h6 Usage
 pre
   code
@@ -341,8 +340,8 @@ h6 Output
     .col-xs-12.hide-for-portrait
       = '.col-xs-12 .hide-for-portrait (is landscape)'
 
-h2 Ordering Classes
-p Mit den Ordering Classes kannst du die Reihenfolge deiner Container anpassen, ohne den HTML Code zu verändern.
+h2 Ordering classes
+p With the ordering classes you can customize the order of your container without changing the HTML code.
 h6 Usage
 pre
   code
@@ -364,7 +363,7 @@ h6 Output
       = '.col-xs-3 .pull-xs-9  (2. Div)'
 
 h2 Offset Classes
-p Mit den Offset Classes können Spalten ein beliebiger Offset hinzugefügt werden.
+p With the offset classes you can add any offset for columns. 
 h6 Usage
 pre
   code

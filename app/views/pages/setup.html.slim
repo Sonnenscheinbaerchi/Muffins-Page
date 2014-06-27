@@ -3,27 +3,29 @@ h1 Setup
 
 h2 Get started
 ol
-  li Downloade Grid & Theme
-  li Installiere Ruby
-  li Installiere Sass
-  li Binde das Grid und das Theme in dein Projekt ein
+  li Download grid and theme
+  li Install Ruby
+  li Install Sass
+  li Include the grid and theme in your project
 
 h2 Download
-p Muffins bietet verschiedenen Möglichkeiten für einen schnellen Start.
-p Das spezielle an Muffins ist: Es ist ein reines Sass-Framework! Wir bieten dir keine CSS-Varianten, denn du solltest dein Grid zunächst costumizen. Auch das Zusammenspiel aus Grid und Theme funktioniert im Sass.
-h3 Das Grid
-a.btn.primary href="#" Download Grid
+p muffins offers various possibilities for a quick start.
+p The special of muffins is: It is a pure Sass-Framework! We offer no CSS variants, because you should first create your grid individually. The whole interaction of grid, theme and your costum styles works in Sass.
+h3 The grid
+a.btn.primary href="#" Download grid
 
 h3 Themes
-a.btn.primary href="#" Download Default-Theme
+a.btn.primary href="#" Download default theme
 
-h2 Installiere Ruby
+h2 Install Ruby
+p TODO
 
-h2 Installiere Sass
+h2 Install Sass
+p TODO
 
-h2 Binde das Grid und das Theme in dein Projekt ein
-h3 Grid einbinden
-p Im Download-Paket findest du den Ordner "muffins" mit der folgenden Dateistruktur. Dieser Ordner enthält alle Kompnenten des Grid-Frameworks. 
+h2 Include the grid and theme in your project
+h3 Include grid
+p In the download package you will find the folder "muffins" with the following file structure. This folder contains all the components of the grid.
 pre 
   | muffins/
   br
@@ -55,20 +57,20 @@ pre
   br
   |  └── style.scss
 
-p Füge nun den muffins-Ordner in dein Projekt ein. 
-p Um das Grid zu verwenden musst du im "config"-Ordner eine "_grid.scss"-Datei anlegen. Im Downll´oad-Paket ist bereits eine Beispieldatei (_grid.example.scss) vorhanden, an der du dich orientieren kannst. Alle anderen Dateien solltest du für die einfache Aktualisierung unverändert lassen.  
+p Now add the muffins folder in your project.
+p To use the grid you have to create a "_grid.scss" file in the "config" folder. the download package includes a sample file (_grid.example.scss), to orient yourself. Any other files you should be left unchanged for easy updating.
 p 
-  | Hier kannst du nun eine individuellen Einstellungen für dein Grid vornehmen (nähere Erklärung dazu unter 
+  | Here you can have a custom settings for your grid (for further explanation, see 
   a href="#" Grid
   | ).
-p Anschließend musst du in deiner Projekteigenen Sass-Datei das Framework inkludieren.
+p Then you need to include the framework in your project's own Sass file
 pre
   code.highlight = '@import "[Pfad zum muffins-Ordner]/style"'
-p Jetzt kannst du das Grid vollständig verwenden.
-h3 Theme einbinden
-p Im Download-Paket findest du einen Ordner mit dem Theme-Namen mit der folgenden beispielhaften Ordnerstruktur. Dieser Ordner enthält alle Komponenten des Themes. Bitte beachte hierbei, dass die Dateien hier durchaus anders benannt, entfernt oder zusätzlich hinzugefügt wordens ein können.
+p Now you can use the grid.
+h3 Include theme
+p In the download package you will find a folder with the theme name with the following exemplary folder structure. This folder contains all components of the theme. Note here that the files here quite differently named, removed, or may have been added in addition.
 pre 
-  | [Dateiname Theme]/
+  | [filename theme]/
   br
   |  ├── config/
   br
@@ -101,11 +103,11 @@ pre
   |  ├── vendor/
   br
   |  └── style.scss
-p Füge nun den Theme-Ordner deinem Projekt hinzu.
-p Um das Theme zu verwenden, müssen alle Dateien im config-Ordner, die einer Beispieldatei ([Dateiname].example.scss) haben erstellt werden müssen, um das Theme zu verwenden (Nähere Erkärungen hierzu im jeweiligen Theme). Alle anderen Dateien solltest du für die einfache Aktualisierung unverändert lassen.  
-p Hier kannst du nun deine individuellen Anpassungen am Theme vornehmen.
-p Anschließend musst du in deiner Projekteigenen Sass-Datei das Framework inkludieren.
+p Now add the theme folder to your project.
+p To use the theme, all files in the config folder, the sample file ([filename].example.scss) must have to be created to use the Theme (for further provides an explanation for this in each theme). Any other files you should be left unchanged for easy updating.
+p Here you can make your individual adjustments to the theme.
+p Then you need to include the framework in your project's own Sass file. 
 pre
   code.highlight
-    = '@import "[Pfad zum Theme-Ordner]/style"'
-p Jetzt kannst du das Theme vollständig verwenden.
+    = '@import "[Path to the theme folder]/style"'
+p Now you can use the theme.
