@@ -1,0 +1,157 @@
+h1 Forms
+
+h2 Form elements
+
+p Using forms in muffins default-theme is very easy. You can combine all standard forms and - of course - the grid. 
+p All form elements are styled based on their type attribute or a class. Here you get an short overview for what you con realize with the default-theme
+
+h6 Example
+.example
+  form
+    .row
+      .col-xs-12
+        label 
+          | Input Label
+          input type="text" placeholder=".col-xs-12"
+    .row
+      .col-xs-6
+        label  
+          | Input Label
+          input type="text" placeholder=".col-xs-6"
+      .col-xs-6
+        .row.collapse
+          label Input Label
+          .col-xs-9
+            input type="text" placeholder=".col-xs-9"
+          .col-xs-3
+            span.postfix .com
+    .row
+      .col-xs-12
+        label  
+          | Select Box
+          select
+            option value="gingerbread" Gingerbread
+            option value="croissant" Croissant
+            option value="tiramisu" Tiramisu
+            option value="gummies" Gummies
+    .row
+      .col-xs-12
+        label  Choose a color
+        input type="radio" name="color" value="Red" id="colorRed"
+        label for="colorRed" Red
+        input type="radio" name="color" value="Blue" id="colorBlue"
+        label for="colorBlue" Blue
+      .col-xs-6
+        label Choose one
+        input id="checkbox1" type="checkbox"
+        label for="checkbox1" Checkbox 1
+        input id="checkbox2" type="checkbox"
+        label for="checkbox2" Checkbox 2
+    .row
+      .col-xs-12
+        label  
+          | Textarea Label
+          textarea placeholder="col-xs-12"
+
+
+h3 Fieldset legend
+h6 usage
+pre
+  code
+    header HTML
+    p
+      = '<form>'
+      br
+      = '  <fieldset>'
+      br
+      = '    <legend> Legend </legend>' 
+      br
+      = '    <label>Input label'
+      br
+      = '      <input type="text" placeholder="Input placeholder....">'
+      br
+      = '    </label>'
+      br
+      = '  </fieldset>'
+      br
+      = '</form>'
+
+h6 Example
+.example
+  form
+    fieldset
+      legend Legend
+      label
+        | Input label
+        input type="text" placeholder="Input placeholder..."
+
+h3 Labels
+h6 Usage
+pre
+  code
+    header HTML
+    p
+      = '<form>'
+      br
+      = '  <label> Input label'
+      br
+      = '    <input type="text" />'
+      br
+      = '  </label>'
+      br
+      = '  <div class="row">'
+      br
+      = '    <div class="col-xs-3">'
+      br
+      = '      <label>Inline label</label>'
+      br
+      = '    </div>'
+      br
+      = '    <div class="col-xs-9">'
+      br
+      = '      <input type="text" />'
+      br
+      = '    </div>'
+      br
+      = '  </div>'
+      br
+      = '  <div class="row">'
+      br
+      = '    <div class="col-xs-3">'
+      br
+      = '      <label class="label-right">Label right</label>'
+      br
+      = '    </div>'
+      br
+      = '    <div class="col-xs-9">'
+      br
+      = '      <input type="text" />'
+      br
+      = '    </div>'
+      br
+      = '  </div>'
+      br
+      = '</form>'
+h6 Example
+.example
+  form
+    label
+      | Input label
+      input type="text"
+    .row
+      .col-xs-3
+        label Input label
+      .col-xs-9
+        input type="text"
+    .row
+      .col-xs-3
+        label.label-right Label right
+      .col-xs-9
+        input type="text"
+
+
+
+
+
+
+h2 Form validation
