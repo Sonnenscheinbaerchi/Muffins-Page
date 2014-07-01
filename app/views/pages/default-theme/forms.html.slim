@@ -55,7 +55,18 @@ h6 Example
 
 
 h3 Fieldset legend
-h6 usage
+p 
+  | A Fieldset is used as a wrapper right inside the form element. Right after you define a fieldset, you can include a legend title. You can easily adjust the formatting of the fieldset and legend by changing the following variables in 
+  code config/_forms.scss
+  | :
+p
+  code $color-border-fieldset
+  | Border color for the fieldset. (default: $color-brand-primary)
+p
+  code $color-background-fieldset-legend
+  | Background color for the legend in the fieldset. (default: $color-white)
+
+h6 Usage
 pre
   code
     header HTML
@@ -86,6 +97,18 @@ h6 Example
         input type="text" placeholder="Input placeholder..."
 
 h3 Labels
+p You can show labels as inline or as block (default). To display the labels as inline you can put the label inside a different column to the left of the input. If you like the label to have an align to the right add a class of .label-right to the label. You can easily adjust the formatting of the labels by changing the following variables in 
+  code config/_forms.scss
+  | :
+p
+  code $color-label
+  | Font color for the label. (default: $color-black)
+p
+  code $font-size-label
+  | Fontsize for the label. (default: $font-size-default)
+p
+  code $line-height-label
+  | Lineheight for the label. (default: $line-height-default)
 h6 Usage
 pre
   code
@@ -149,8 +172,231 @@ h6 Example
       .col-xs-9
         input type="text"
 
+h3 Input and Textarea
+P The muffins default-theme formats the default HTML5 input fields (eg. text, password, date, datetime, date, month, time, week, number, email, url, search, tel, color). All input fields and the textarea uses the same formatting.  You can easily adjust them by changing the following variables in 
+  code config/_forms.scss
+  | :
+p
+  code $color-form
+  | Font color for the fields. (default:  $color-gray)
+p
+  code $color-form-placeholder
+  | Font color for the field-placeholder. (default: $color-gray-lighter)
+p
+  code $color-background-form
+  | Backgroudcolor for the fields. (default: $color-white)
+p
+  code $color-border-form
+  | Border color for the fields. (default: $color-gray)
+p
+  code $color-background-form-focus
+  | Background color for the fields, when they are focused. (default: lighten($color-brand-primary, 10%))
+p
+  code $color-border-form-focus
+  | Border color for the fields, when they are focused. (default: $color-brand-primary)
+p
+  code $box-shadow-form
+  | box shadow for the fields. (default: inset 0 1px 2px rgba(0, 0, 0, 0.1)) 
+p
+  code $font-size-form
+  | Fontsize for the fields. (default: $font-size-default)
+p
+  code $line-height-form
+  | Lineheight for the fields. (default: $line-height-default)
+h6 Usage
+pre
+  code
+    header HTML
+    p
+      = '<form>'
+      br
+      = '  <div class="row">'
+      br
+      = '    <div class="col-xs-4">'
+      br
+      = '      <label> Input text</label>'
+      br
+      = '      <input type="text" placeholder="Input text" />'
+      br
+      = '    </div>'
+      br
+      = '    <div class="col-xs-4">'
+      br
+      = '      <label> Input password</label>'
+      br
+      = '      <input type="password" placeholder="Input password" />'
+      br
+      = '    </div>'
+      br
+      = '    <div class="col-xs-4">'
+      br
+      = '      <label> Input datetime</label>'
+      br
+      = '      <input type="datetime"  />'
+      br
+      = '    </div>'
+      br
+      = '  </div>'
+      br
+      = '  <div class="row">'
+      br
+      = '    <div class="col-xs-3">'
+      br
+      = '      <label> Input date</label>'
+      br
+      = '      <input type="date" />'
+      br
+      = '    </div>'
+      br
+      = '    <div class="col-xs-3">'
+      br
+      = '      <label> Input month</label>'
+      br
+      = '      <input type="month" />'
+      br
+      = '    </div>'
+      br
+      = '    <div class="col-xs-3">'
+      br
+      = '      <label> Input week</label>'
+      br
+      = '      <input type="week"  />'
+      br
+      = '    </div>'
+      br
+      = '    <div class="col-xs-3">'
+      br
+      = '      <label> Input time</label>'
+      br
+      = '      <input type="time"  />'
+      br
+      = '    </div>'
+      br
+      = '  </div>'      
+      br
+      = '  <div class="row">'
+      br
+      = '    <div class="col-xs-6">'
+      br
+      = '      <label> Input number</label>'
+      br
+      = '      <input type="number" placeholder="4"/>'
+      br
+      = '    </div>'
+      br
+      = '    <div class="col-xs-6">'
+      br
+      = '      <label> Input tel</label>'
+      br
+      = '      <input type="tel" placeholder="0123 456789" />'
+      br
+      = '    </div>'
+      br
+      = '  </div>'
+      br
+      = '  <div class="row">'
+      br
+      = '    <div class="col-xs-6">'
+      br
+      = '      <label> Input email</label>'
+      br
+      = '      <input type="email" placeholder="muffins@backen.de"/>'
+      br
+      = '    </div>'
+      br
+      = '    <div class="col-xs-6">'
+      br
+      = '      <label> Input url</label>'
+      br
+      = '      <input type="url" placeholder="http://www.muffins.de" />'
+      br
+      = '    </div>'
+      br
+      = '  </div>'
+      br
+      = '  <div class="row">'
+      br
+      = '    <div class="col-xs-6">'
+      br
+      = '      <label> Input search</label>'
+      br
+      = '      <input type="search" placeholder="Search term..."/>'
+      br
+      = '    </div>'
+      br
+      = '    <div class="col-xs-6">'
+      br
+      = '      <label> Input color</label>'
+      br
+      = '      <input type="color" />'
+      br
+      = '    </div>'
+      br
+      = '  </div>'
+      br
+      = '</form>'
+h6 Example
+.example
+  form
+    .row
+      .col-xs-4
+        label Input text
+        input type="text" placeholder="Input text"
+      .col-xs-4
+        label Input password
+        input type="password" placeholder="Password"
+      .col-xs-4
+        label Input datetime
+        input type="datetime" placeholder="datetime"
+    .row
+      .col-xs-3
+        label Input date
+        input type="date" placeholder="date"
+      .col-xs-3
+        label Input month
+        input type="month" placeholder="month"
+      .col-xs-3
+        label Input week
+        input type="week" placeholder="week"
+      .col-xs-3
+        label Input time
+        input type="time" placeholder="time"
+    .row
+      .col-xs-6
+        label Input number
+        input type="number" placeholder="4"
+      .col-xs-6
+        label Input tel
+        input type="tel" placeholder="0123 456789"
+    .row
+      .col-xs-6
+        label Input email
+        input type="email" placeholder="muffins@backen.de"
+      .col-xs-6
+        label Input url
+        input type="url" placeholder="http://www.muffins.de"
+    .row    
+      .col-xs-6
+        label Input search
+        input type="search" placeholder="Search term..."
+      .col-xs-6
+        label Input color
+        input type="color"
 
-
+h3 Post- and prefixes für labels and actions
+p 
+  | With muffins default-theme you can use some post-prefixes to explain your fields. You can easily adjust them by changing the following variables in 
+  code config/_forms.scss
+  | :
+p
+  code $color-background-postprefix
+  | Background color for post- and prefixes. (default: $color-gray-lighter)
+p
+  code $color-postfix 
+  | Font color for post- und prefixes. (default: $color-gray)
+p
+  code $color-border-post-prefix
+  | Border color for post- und prefixes. (default: $color-gray)
 
 
 
