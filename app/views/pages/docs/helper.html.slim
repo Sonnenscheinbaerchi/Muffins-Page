@@ -132,3 +132,49 @@ p
   | ) uand your retina suffix (
   code $retina-suffix
   | ) to configure.
+h3 Styles
+p muffins contains some mixins for style for different browsers
+h4 Placeholder
+p 
+  | To fetch alle placeholder-versionin css you can easily use the 
+  code placeholder()
+  |  mixin. 
+h6 Usage
+pre
+  code
+    header SCSS
+    p
+      = 'input {'
+      br
+      = '  color: blue;'
+      br
+      = '  @include placeholder {'
+      br
+      = '     color: red;'
+      br
+      = '  }'
+      br
+      = '}'
+h6 Output
+pre
+  code
+    header CSS
+    p
+       = 'input {'
+       br
+       = '  color:blue;'
+       br
+       = '}'
+       br
+       = 'input::-webkit-input-placeholder,  // WebKit and Blink (Safari, Google Chrome, Opera 15+) '
+       br
+       = 'input:-moz-placeholder, / /Mozilla Firefox 4 to 18 '
+       br
+       = 'input::-moz-placeholder, // Mozilla Firefox 19+ '
+       br
+       = 'input:-ms-input-placeholder {  // Internet Explorer 10'
+       br
+       = '  color: red;'
+       br
+       = '}'
+
