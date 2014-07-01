@@ -397,6 +397,188 @@ p
 p
   code $color-border-post-prefix
   | Border color for post- und prefixes. (default: $color-gray)
+p 
+  | You have to add the class
+  code .collapse
+  |  to you "row"-div to prevent the paddings for the grid. Otherwise you will have space between the pre- or postfix und and the label. You can use pre- or postfix as single or together. Easily create a span with the class
+  code .prefix
+  |  or 
+  code .postfix
+  |  .
+h6 Usage
+pre
+  code
+    header HTML
+    p
+      = '<div class="row collapse">'
+      br
+      = '  <label>Input with prefix </label>'
+      br
+      = '  <div class="col-xs-2">'
+      br
+      = '    <span class="prefix"> http:// </span>'
+      br
+      = '  </div>'
+      br
+      = '  <div class="col-xs-10">'
+      br
+      = '    <input type"text" placeholder="Input..." />'
+      br
+      = '  </div>'
+      br
+      = '</div>'
+      br
+      = '<div class="row collapse">'
+      br
+      = '  <label>Input with postfix </label>'
+      br
+      = '  <div class="col-xs-10">'
+      br
+      = '    <input type"text" placeholder="Input..." />'
+      br
+      = '  </div>'
+      br
+      = '  <div class="col-xs-2">'
+      br
+      = '    <span class="postfix"> .com </span>'
+      br
+      = '  </div>'
+      br
+      = '</div>'
+      br
+      = '<div class="row collapse">'
+      br
+      = '  <div class="col-xs-2">'
+      br
+      = '    <span class="prefix"> http:// </span>'
+      br
+      = '  </div>'
+      br
+      = '  <label>Input with prefix and postfix </label>'
+      br
+      = '  <div class="col-xs-8">'
+      br
+      = '    <input type"text" placeholder="Input..." />'
+      br
+      = '  </div>'
+      br
+      = '  <div class="col-xs-2">'
+      br
+      = '    <span class="postfix"> .com </span>'
+      br
+      = '  </div>'
+      br
+      = '</div>'
+h6 Example
+.example
+  .row.collapse
+    label Input with prefix
+    .col-xs-2
+      span.prefix http://
+    .col-xs-10
+      input type="text" placeholder="Input.."
+  .row.collapse
+    label Input with postfix
+    .col-xs-10
+      input type="text" placeholder="Input.."
+    .col-xs-2
+      span.postfix .com
+  .row.collapse
+    label Input with prefix and postfix
+    .col-xs-2
+      span.prefix http://
+    .col-xs-8
+      input type="text" placeholder="Input.."
+    .col-xs-2
+      span.postfix .com
+
+h3 Select
+p 
+  | the muffins default-theme supports single and multiple select fields. You can costumize them in the
+  code config/_forms.scss
+  |  file with following variables:
+p
+  code $color-select
+  | Font color for select elemens. (default: $color-black)
+p
+  code $color-background-select 
+  | Background color for select elements. (default: $color-grey-lighter)
+p
+  code $color-border-select
+  | Border color for select elements. (default: $color-gray)
+p
+  code $font-size-select
+  | Font size for select elements. (default: $font-size-default)
+p
+  code $line-height-select
+  | Line height fpr select elements. (default: $line-height-default)
+
+h6 Usage
+pre
+  code
+    header HTML
+    p
+      = '//Single select'
+      br
+      = '<select>'
+      br
+      = '  <option value="1"> Option1 </option>'
+      br
+      = '  <option value="2"> Option2 </option>'
+      br
+      = '  <option value="3"> Option3 </option>'
+      br
+      = '  <option value="4"> Option4 </option>'
+      br
+      = '</select>'
+      br
+      br
+      br
+      = '//multiple select'
+      br
+      = '<select size="5" multiple>'
+      br
+      = '  <option value="1"> Option1 </option>'
+      br
+      = '  <option value="2"> Option2 </option>'
+      br
+      = '  <option value="3"> Option3 </option>'
+      br
+      = '  <option value="4"> Option4 </option>'
+      br
+      = '  <option value="5"> Option5 </option>'
+      br
+      = '  <option value="6"> Option6 </option>'
+      br
+      = '  <option value="7"> Option7 </option>'
+      br
+      = '</select>'
+h6 Example
+.example
+  .row
+    .col-xs-6
+      label 
+        | Single select
+      select
+        option value="1" Option1
+        option value="2" Option2
+        option value="3" Option3
+        option value="4" Option4
+    .col-xs-6
+      label
+        | Multiple Select
+      select size="5" multiple="multiple"
+        option value="1" Option1
+        option value="2" Option2
+        option value="3" Option3
+        option value="4" Option4
+        option value="5" Option5
+        option value="6" Option6
+        option value="7" Option7
+
+
+
+
 
 
 
