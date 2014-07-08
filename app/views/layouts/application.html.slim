@@ -5,11 +5,10 @@ html
     title MUFFINS - Scss Framework
     = stylesheet_link_tag 'application', media: 'all'
     = csrf_meta_tags
-  body.flat 
-    #wrapper
-      = render 'layouts/header'
-      = render 'layouts/sidebar'
-      = render 'layouts/content'
-      = render 'layouts/footer'
+  body
+    = render 'layouts/header'
+    .wrapper
+        = render 'layouts/content'
+    = render 'layouts/footer'
     = javascript_include_tag 'application'
     = yield :javascripts
