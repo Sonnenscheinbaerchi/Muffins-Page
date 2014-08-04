@@ -6,6 +6,7 @@ html
     = stylesheet_link_tag 'application', media: 'all'
     = csrf_meta_tags
   body
+    = render 'layouts/topbar'
     = render 'layouts/header'
     .wrapper
         = render 'layouts/content'

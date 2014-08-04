@@ -1,0 +1,13 @@
+nav.topbar.clearfix
+  .page-title.left = link_to root_path do
+     = "muffins"
+  section.topbar-section.right
+    ul
+      li
+        = link_to 'Getting started', page_path('getting-started')
+      li
+        = link_to 'Documentation', page_path('documentation')
+      li
+        = link_to 'Themes', page_path('themes')    
+      li
+        = link_to 'Download', page_path('download')
