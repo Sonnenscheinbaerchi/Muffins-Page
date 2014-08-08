@@ -1,11 +1,11 @@
-h1 Browser compatibility
+h1 Browser Kompatibilität
 
 
 h2 Browser without media queries
 p Muffins builds on mobile-first. To even support old browsers that do not yet support media queries (e.g IE > 9) and to ensure a "web view", muffins will create an extra stylesheet that contains no media queries and, moreover, the "mobile-first" statements will be overwritten by the "web view" statements.
 
 
-h3 Stylesheet Datei erzeugen
+h3 Create Stylesheet Data 
 p 
   | To create the style sheet file without media queries, you have to create a new 
   code .scss
@@ -18,7 +18,9 @@ p
   |  here.
 h3 Mixin nutzen
 p 
-  | Of course you can also use the mixin fix-media-queries() in your own styles. It should be noted that you have a 
+  | Of course you can also use the mixin 
+  code fix-media-queries() 
+  | in your own styles. It should be noted that you have a 
   code $min-width 
   |  as well as a 
   code $max-width 
@@ -54,11 +56,11 @@ pre
 
 
 h2 Old browser
-p Old browsers (eg IE <9) sometimes require a different style sheet.
+p Old browsers (eg IE < 9) sometimes require a different stylesheet.
 p 
-  | With muffins you can include these statements directly in your Sass files. The Mixin 
+  | With muffins you can include these statements directly in your sass files. With the Mixin 
   code old-browser()
-  |  , you can explicitly create statements for old browsers that you can separate in a separate style sheet file.
+  |   you can explicitly create statements for old browsers that you can separate in a separate stylesheetfile.
 h6 Usage
 pre 
   code

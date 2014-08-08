@@ -26,36 +26,32 @@ p TODO
 h2 Include the grid and theme in your project
 h3 Include grid
 p In the download package you will find the folder "muffins" with the following file structure. This folder contains all the components of the grid.
-pre 
-  | muffins/
-  br
-  |  ├── config/
-  br
-  |  │   └── _grid.scss
-  br
-  |  ├── mixins/
-  br
-  |  │   └── _grid.scss
-  br
-  |  ├── modules/
-  br
-  |  │   ├── _global.scss
-  br
-  |  │   ├── _grid.scss
-  br
-  |  │   └── _utility-classes.scss
-  br
-  |  ├── reset/
-  br
-  |  │   ├── _base.scss
-  br
-  |  │   ├── _html5.scss
-  br
-  |  │   ├── _lists.scss
-  br
-  |  │   └── _typography.scss
-  br
-  |  └── style.scss
+ul
+  li.folder 
+    | muffins
+    ul
+      li.folder 
+        | config
+        ul
+          li.file _grid.scss
+      li.folder 
+         | mixins
+         ul
+            li.file _grid.scss
+      li.folder
+        | modules
+        ul
+          li.file _global.scss
+          li.file _grid.scss
+          li.file _utility-classes.scss
+      li.folder
+        | reset
+        ul
+          li.file _base.scss
+          li.file _html5.scss
+          li.file _lists.scss
+          li.file _typography.scss
+      li.file style.scss
 
 p Now add the muffins folder in your project.
 p 
@@ -68,43 +64,49 @@ pre
 p Now you can use the grid.
 h3 Include theme
 p In the download package you will find a folder with the theme name with the following exemplary folder structure. This folder contains all components of the theme. Note here that the files here quite differently named, removed, or may have been added in addition.
-pre 
-  | [filename theme]/
-  br
-  |  ├── config/
-  br
-  |  │   ├── _buttons.scss
-  br
-  |  │   ├── _colors.scss
-  br
-  |  │   ├── _layout.scss
-  br
-  |  │   └── _typography.scss
-  br
-  |  ├── mixins/
-  br
-  |  │   ├── _buttons.scss
-  br
-  |  │   └── _typography.scss
-  br
-  |  ├── patterns/
-  br
-  |  │   ├── _buttons.scss
-  br
-  |  │   ├── _code.scss
-  br
-  |  │   ├── _layout.scss
-  br
-  |  │   ├── _lists.scss
-  br
-  |  │   └── _typography.scss
-  br
-  |  ├── vendor/
-  br
-  |  └── style.scss
+ul
+  li.folder
+    | [filename theme]
+    ul
+      li.folder 
+        | config
+        ul
+          li.file _buttons.scss
+          li.file _colors.scss
+          li.file _layout.scss
+          li.file _typography.scss
+      li.folder 
+        | mixins
+        ul
+          li.file _buttons.scss
+          li.file _typography.scss
+      li.folder
+        | patterns
+        ul
+          li.folder
+            | blocks
+            ul
+              li.file _buttons.scss
+              li.file _code.scss
+              li.file _lists.scss
+              li.file _typography.scss
+          li.folder
+            | components
+            ul
+              li.file _navigation.scss
+              li.file _callouts-prompts.scss
+          li.folder
+            | modules
+            ul
+              li.file _header.scss
+              li.file _layout.scss
+              li.file _topbar.scss
+              li.file _footer.scss
+              li.file _product.scss
+      li.folder
+        | vendor
+  li.file style.scss
 p Now add the theme folder to your project.
-p To use the theme, all files in the config folder, the sample file ([filename].scss) must have to be created to use the Theme (for further provides an explanation for this in each theme). Any other files you should be left unchanged for easy updating.
-p Here you can make your individual adjustments to the theme.
 p Then you need to include the framework in your project's own Sass file. 
 pre
   code.highlight

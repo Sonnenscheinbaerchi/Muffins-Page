@@ -1,13 +1,22 @@
-nav.topbar.clearfix
-  .page-title.left = link_to root_path do
-     = "muffins"
-  section.topbar-section.right
-    ul
-      li
-        = link_to 'Getting started', page_path('getting-started')
-      li
-        = link_to 'Documentation', page_path('documentation')
-      li
-        = link_to 'Themes', page_path('themes')    
-      li
-        = link_to 'Download', page_path('download')
+nav.topbar
+  .wrapper.clearfix
+    section.topbar-section.left
+      ul.inline
+        li
+          = link_to 'Getting started', page_path('getting-started')
+        li
+          = link_to 'Documentation', page_path('documentation')
+        li
+          = link_to 'Themes', page_path('themes')    
+        li
+          = link_to 'Download', page_path('download')
+        li
+          = link_to 'Forum', page_path('forum')
+    section.topbar-section.right
+      ul.inline
+        li
+          a.btn.primary.icon.fb href="http://facebook.de"
+        li
+          a.btn.primary.icon.twitter href="http://www.twitter.com"
+        li 
+          a.btn.primary.icon.github href="http://www.github.de"
