@@ -1,25 +1,42 @@
-h1 Navigation
+.row
+  sidebar.navigation.col-xs-3
+    ul
+      li.active = link_to 'Buttercream', page_path('themes/buttercream')
+      ul
+        li
+          = link_to 'Buttons', page_path('themes/buttercream/buttons')
+        li
+          = link_to 'Typography', page_path('themes/buttercream/typography')
+        li
+          = link_to 'Lists', page_path('themes/buttercream/lists')
+        li.active
+          = link_to 'Navigation', page_path('themes/buttercream/navigation')
+        li
+          = link_to 'Forms', page_path('themes/buttercream/forms')
+        li
+          = link_to 'Callouts and prompts', page_path('themes/buttercream/callouts-prompts')
+  .main.col-xs-9
 
-h2 Inline Lists
+    h2 Inline Lists
 
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<ul class="inline">'
-      br
-      = '  <li> Tiramisu </li>'
-      br
-      = '  <li> Dessert </li>'
-      br
-      = '  <li> Candy chocolate </li>'
-      br
-      = '</ul>'
-h6 Output
-.example
-  ul.inline
-    li Tiramisu
-    li Dessert
-    li Candy chocolate
+    h6 Usage
+    pre
+      code
+        header HTML
+        p
+          = '<ul class="inline">'
+          br
+          = '  <li> Tiramisu </li>'
+          br
+          = '  <li> Dessert </li>'
+          br
+          = '  <li> Candy chocolate </li>'
+          br
+          = '</ul>'
+    h6 Output
+    .example
+      ul.inline
+        li Tiramisu
+        li Dessert
+        li Candy chocolate
 

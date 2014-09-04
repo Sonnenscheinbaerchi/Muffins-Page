@@ -1,381 +1,391 @@
-h1 Grid
+.row
+  sidebar.navigation.col-xs-3
+    ul
+      li.active
+        = link_to 'Grid', page_path('docs/grid')
+      li
+        = link_to 'Browser compatibility', page_path('docs/browser')
+      li
+        = link_to 'Helper', page_path('docs/helper')
+      li
+        = link_to 'Icons', page_path('docs/icons')
+  .main.col-xs-9
+      p muffins comes standard with a 12-column repsonsive grid, with the mobile first approach. The grid can be based on the viewport or a maximum width. The special feature of grid in muffins is that you can define both the number of breakpoints and the number of columns and their distances completely variable. So you can you quickly and easily create your own grid.
+      h2 Variables
+      h3 grid-max-width
+      p The maximum width of the grids can be specified in pixels, em or percentages.
+      p = "default: 1440px"
+      h3  space
+      p The distance between the columns, in pixels, em or percentages are given.
+      p = "default: 8px"
+      h3 total-columns
+      p The number of columns is variable. Thus you can build your individual grid and adapt it to your situation completely.
+      p = "default: 12"
+      h3 grid-breakpoints
+      p 
+        | With muffins you can not only determine the number of breakpoints, you can define the class name also quite simple. You want no division in size but in name device name? No problem!
+        br
+        | Simply enter your class name, the min-width and max-width and you're ready to generate your own grid.
+      p = "default: ('xl', 1261px, null), ('lg', 961px, null), ('md', 641px, null), ('xl', 321px, null), ('xs', 220px, null)"
 
-p muffins comes standard with a 12-column repsonsive grid, with the mobile first approach. The grid can be based on the viewport or a maximum width. The special feature of grid in muffins is that you can define both the number of breakpoints and the number of columns and their distances completely variable. So you can you quickly and easily create your own grid.
-h2 Variables
-h3 grid-max-width
-p The maximum width of the grids can be specified in pixels, em or percentages.
-p = "default: 1440px"
-h3  space
-p The distance between the columns, in pixels, em or percentages are given.
-p = "default: 8px"
-h3 total-columns
-p The number of columns is variable. Thus you can build your individual grid and adapt it to your situation completely.
-p = "default: 12"
-h3 grid-breakpoints
-p 
-  | With muffins you can not only determine the number of breakpoints, you can define the class name also quite simple. You want no division in size but in name device name? No problem!
-  br
-  | Simply enter your class name, the min-width and max-width and you're ready to generate your own grid.
-p = "default: ('xl', 1261px, null), ('lg', 961px, null), ('md', 641px, null), ('xl', 321px, null), ('xs', 220px, null)"
-
-h2 The default grid
-p The default grid classes are composed of the prefix "col", the class name and the number of columns together (this will be "-" separated), eg . "col-xs-6"
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '   <div class="col-xs-12">.col-xs-12</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-12
-      = '.col-xs-12'
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '   <div class="col-xs-1">.col-xs-1</div>'
-      br
-      = '   <div class="col-xs-11">.col-xs-11</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-1
-      = '.col-xs-1'
-    .col-xs-11
-      = '.col-xs-11'
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '   <div class="col-xs-2">.col-xs-2</div>'
-      br
-      = '   <div class="col-xs-10">.col-xs-10</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-2
-      = '.col-xs-2'
-    .col-xs-10
-      = '.col-xs-10'
-h6 Usage
-pre
-  code
-    header
-    p
-      = '<div class="row">'
-      br
-      = '   <div class="col-xs-3">.col-xs-3</div>'
-      br
-      = '   <div class="col-xs-9">.col-xs-9</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-3
-      = '.col-xs-3'
-    .col-xs-9
-      = '.col-xs-9'
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '   <div class="col-xs-4">.col-xs-4</div>'
-      br
-      = '   <div class="col-xs-8">.col-xs-8</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-4
-      = '.col-xs-4'
-    .col-xs-8
-      = '.col-xs-8'
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '   <div class="col-xs-5">.col-xs-5</div>'
-      br
-      = '   <div class="col-xs-7">.col-xs-7</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-5
-      = '.col-xs-5'
-    .col-xs-7
-      = '.col-xs-7'
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '   <div class="col-xs-6">.col-xs-6</div>'
-      br
-      = '   <div class="col-xs-6">.col-xs-6</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-6
-      = '.col-xs-6'
-    .col-xs-6
-      = '.col-xs-6'
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '   <div class="col-xs-7">.col-xs-7</div>'
-      br
-      = '   <div class="col-xs-5">.col-xs-5</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-7
-      = '.col-xs-7'
-    .col-xs-5
-      = '.col-xs-5'
-h6 Usage
-pre 
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '   <div class="col-xs-8">.col-xs-8</div>'
-      br
-      = '   <div class="col-xs-4">.col-xs-4</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-8
-      = '.col-xs-8'
-    .col-xs-4
-      = '.col-xs-4'
-h6 Usage
-pre
-  code
-    header 
-    p
-      = '<div class="row">'
-      br
-      = '   <div class="col-xs-9">.col-xs-9</div>'
-      br
-      = '   <div class="col-xs-3">.col-xs-3</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-9
-      = '.col-xs-9'
-    .col-xs-3
-      = '.col-xs-3'
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '   <div class="col-xs-10">.col-xs-10</div>'
-      br
-      = '   <div class="col-xs-2">.col-xs-2</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-10
-      = '.col-xs-10'
-    .col-xs-2
-      = '.col-xs-2'
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '   <div class="col-xs-11">.col-xs-11</div>'
-      br
-      = '   <div class="col-xs-1">.col-xs-1</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-11
-      = '.col-xs-11'
-    .col-xs-1
-      = '.col-xs-1'
+      h2 The default grid
+      p The default grid classes are composed of the prefix "col", the class name and the number of columns together (this will be "-" separated), eg . "col-xs-6"
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '   <div class="col-xs-12">.col-xs-12</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-12
+            = '.col-xs-12'
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '   <div class="col-xs-1">.col-xs-1</div>'
+            br
+            = '   <div class="col-xs-11">.col-xs-11</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-1
+            = '.col-xs-1'
+          .col-xs-11
+            = '.col-xs-11'
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '   <div class="col-xs-2">.col-xs-2</div>'
+            br
+            = '   <div class="col-xs-10">.col-xs-10</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-2
+            = '.col-xs-2'
+          .col-xs-10
+            = '.col-xs-10'
+      h6 Usage
+      pre
+        code
+          header
+          p
+            = '<div class="row">'
+            br
+            = '   <div class="col-xs-3">.col-xs-3</div>'
+            br
+            = '   <div class="col-xs-9">.col-xs-9</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-3
+            = '.col-xs-3'
+          .col-xs-9
+            = '.col-xs-9'
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '   <div class="col-xs-4">.col-xs-4</div>'
+            br
+            = '   <div class="col-xs-8">.col-xs-8</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-4
+            = '.col-xs-4'
+          .col-xs-8
+            = '.col-xs-8'
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '   <div class="col-xs-5">.col-xs-5</div>'
+            br
+            = '   <div class="col-xs-7">.col-xs-7</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-5
+            = '.col-xs-5'
+          .col-xs-7
+            = '.col-xs-7'
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '   <div class="col-xs-6">.col-xs-6</div>'
+            br
+            = '   <div class="col-xs-6">.col-xs-6</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-6
+            = '.col-xs-6'
+          .col-xs-6
+            = '.col-xs-6'
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '   <div class="col-xs-7">.col-xs-7</div>'
+            br
+            = '   <div class="col-xs-5">.col-xs-5</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-7
+            = '.col-xs-7'
+          .col-xs-5
+            = '.col-xs-5'
+      h6 Usage
+      pre 
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '   <div class="col-xs-8">.col-xs-8</div>'
+            br
+            = '   <div class="col-xs-4">.col-xs-4</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-8
+            = '.col-xs-8'
+          .col-xs-4
+            = '.col-xs-4'
+      h6 Usage
+      pre
+        code
+          header 
+          p
+            = '<div class="row">'
+            br
+            = '   <div class="col-xs-9">.col-xs-9</div>'
+            br
+            = '   <div class="col-xs-3">.col-xs-3</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-9
+            = '.col-xs-9'
+          .col-xs-3
+            = '.col-xs-3'
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '   <div class="col-xs-10">.col-xs-10</div>'
+            br
+            = '   <div class="col-xs-2">.col-xs-2</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-10
+            = '.col-xs-10'
+          .col-xs-2
+            = '.col-xs-2'
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '   <div class="col-xs-11">.col-xs-11</div>'
+            br
+            = '   <div class="col-xs-1">.col-xs-1</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-11
+            = '.col-xs-11'
+          .col-xs-1
+            = '.col-xs-1'
 
 
-h2 Nested Grid
-p 
-  | All Grid classes you can nest arbitrarily. For this, you need only create a new 
-  code.highlight row
-  |  .
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '   <div class="col-xs-11">'
-      br
-      = '      <div class="row">'
-      br
-      = '         <div class="col-xs-4">.col-xs-4</div>'
-      br
-      = '         <div class="col-xs-4">.col-xs-4</div>'
-      br
-      = '         <div class="col-xs-4">.col-xs-4</div>'
-      br
-      = '      </div>'
-      br
-      = '   </div>'
-      br
-      = '   <div class="col-xs-1">.col-xs-1</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-10
-      p = '.col-xs-10'
-      .row
-        .col-xs-4
-          = '.col-xs-4'
-        .col-xs-4
-          = '.col-xs-4'
-        .col-xs-4
-          = '.col-xs-4'
-    .col-xs-2
-      = '.col-xs-2'
-      .row
-        .col-xs-6
-          = '.col-xs-6'
-        .col-xs-6
-          = '.col-xs-6'
+      h2 Nested Grid
+      p 
+        | All Grid classes you can nest arbitrarily. For this, you need only create a new 
+        code.highlight row
+        |  .
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '   <div class="col-xs-11">'
+            br
+            = '      <div class="row">'
+            br
+            = '         <div class="col-xs-4">.col-xs-4</div>'
+            br
+            = '         <div class="col-xs-4">.col-xs-4</div>'
+            br
+            = '         <div class="col-xs-4">.col-xs-4</div>'
+            br
+            = '      </div>'
+            br
+            = '   </div>'
+            br
+            = '   <div class="col-xs-1">.col-xs-1</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-10
+            p = '.col-xs-10'
+            .row
+              .col-xs-4
+                = '.col-xs-4'
+              .col-xs-4
+                = '.col-xs-4'
+              .col-xs-4
+                = '.col-xs-4'
+          .col-xs-2
+            = '.col-xs-2'
+            .row
+              .col-xs-6
+                = '.col-xs-6'
+              .col-xs-6
+                = '.col-xs-6'
 
-h2 Visibilty Classes
-p With Visibilty classes you can depending of the screen size and orientation and hide elements.
+      h2 Visibilty Classes
+      p With Visibilty classes you can depending of the screen size and orientation and hide elements.
 
-h3 Screen sizes detection
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '  <div class="col-xs-12 hide-md">.col-xs-12 .hide-md</div>'
-      br
-      = '  <div class="col-xs-12 hide-xs show-md">.col-xs-12 .hide-xs .show-md</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-12.hide-md
-      = '.col-x-12 .hide-md'
-    .col-xs-12.hide-xs.show-md
-      = '.col-xs-12 .hide-xs .show-md'
+      h3 Screen sizes detection
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '  <div class="col-xs-12 hide-md">.col-xs-12 .hide-md</div>'
+            br
+            = '  <div class="col-xs-12 hide-xs show-md">.col-xs-12 .hide-xs .show-md</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-12.hide-md
+            = '.col-x-12 .hide-md'
+          .col-xs-12.hide-xs.show-md
+            = '.col-xs-12 .hide-xs .show-md'
 
-h3 Orientation detection
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '  <div class="col-xs-12 hide-for-landscape">.col-xs-12 .hide-for-landscape (is portrait)</div>'
-      br
-      = '  <div class="col-xs-12 hide-for-portrait">.col-xs-12 .hide-for-portrait (is landscape)</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-12.hide-for-landscape
-      = '.col-x-12 .hide-for-landscape (is portrait)'
-    .col-xs-12.hide-for-portrait
-      = '.col-xs-12 .hide-for-portrait (is landscape)'
+      h3 Orientation detection
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '  <div class="col-xs-12 hide-for-landscape">.col-xs-12 .hide-for-landscape (is portrait)</div>'
+            br
+            = '  <div class="col-xs-12 hide-for-portrait">.col-xs-12 .hide-for-portrait (is landscape)</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-12.hide-for-landscape
+            = '.col-x-12 .hide-for-landscape (is portrait)'
+          .col-xs-12.hide-for-portrait
+            = '.col-xs-12 .hide-for-portrait (is landscape)'
 
-h2 Ordering classes
-p With the ordering classes you can customize the order of your container without changing the HTML code.
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '  <div class="col-xs-9 push-xs-3">.col-xs-9 .push-xs-3  (1. Div)</div>'
-      br
-      = '  <div class="col-xs-3 pull-xs-9">.col-xs-3 .pull-xs-9  (2. Div)</div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-9.push-xs-3
-      = '.col-xs-9 .push-xs-3  (1. Div)'
-    .col-xs-3.pull-xs-9
-      = '.col-xs-3 .pull-xs-9  (2. Div)'
+      h2 Ordering classes
+      p With the ordering classes you can customize the order of your container without changing the HTML code.
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '  <div class="col-xs-9 push-xs-3">.col-xs-9 .push-xs-3  (1. Div)</div>'
+            br
+            = '  <div class="col-xs-3 pull-xs-9">.col-xs-3 .pull-xs-9  (2. Div)</div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-9.push-xs-3
+            = '.col-xs-9 .push-xs-3  (1. Div)'
+          .col-xs-3.pull-xs-9
+            = '.col-xs-3 .pull-xs-9  (2. Div)'
 
-h2 Offset Classes
-p With the offset classes you can add any offset for columns. 
-h6 Usage
-pre
-  code
-    header HTML
-    p
-      = '<div class="row">'
-      br
-      = '  <div class="col-xs-6 offset-xs-3">.col-xs-6 .offset-xs-3 </div>'
-      br
-      = '</div>'
-h6 Output
-.example.grid
-  .row
-    .col-xs-6.offset-xs-3
-      = '.col-xs-6 .offset-xs-3 '
+      h2 Offset Classes
+      p With the offset classes you can add any offset for columns. 
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<div class="row">'
+            br
+            = '  <div class="col-xs-6 offset-xs-3">.col-xs-6 .offset-xs-3 </div>'
+            br
+            = '</div>'
+      h6 Output
+      .example.grid
+        .row
+          .col-xs-6.offset-xs-3
+            = '.col-xs-6 .offset-xs-3 '

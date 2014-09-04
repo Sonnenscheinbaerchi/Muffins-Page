@@ -14,9 +14,11 @@
  */
 
 
- //IMPORT GRID
- @import "muffins/style";
 
- //import theme
- @import "buttercream/style";
+//IMPORT GRID
+@import "muffins/_style.scss";
 
+//import theme
+@import "muffins/themes/buttercream/style";
+
+@import "logo";
