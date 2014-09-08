@@ -16,90 +16,99 @@
         li
           = link_to 'Callouts and prompts', page_path('themes/buttercream/callouts-prompts')
   .main.col-xs-9
-    h2 Predefined buttons
-    p To quickly use buttons you can use the pre-defined buttons of the theme.
-    h6 Usage
-    pre
-      code
-        header HTML
-        p
-          = '<a href="#" class="btn default">Default</a>'
-          br
-          = '<a href="#" class="btn primary">Primary</a>'
-          br
-          = '<a href="#" class="btn success">Success</a>'
-          br
-          = '<a href="#" class="btn info">Info</a>'
-          br
-          = '<a href="#" class="btn warning">Warning</a>'
-          br
-          = '<a href="#" class="btn danger">Danger</a>'
-          br
-          = '<a href="#" class="btn link">Link</a>'
-          br
-    h6 Output
-    .example
-      a.btn.default href="#" Default
-      a.btn.primary href="#" Primary
-      a.btn.success href="#" Success
-      a.btn.info href="#" Info
-      a.btn.warning href="#" Warning
-      a.btn.danger href="#" Danger
-      a.btn.link href="#" Link
+    section
+      h2 Predefined buttons
+      p To quickly use buttons you can use the pre-defined buttons of the theme.
+      h6 Usage
+      pre
+        code
+          header HTML
+          p
+            = '<a href="#" class="btn default">Default</a>'
+            br
+            = '<a href="#" class="btn primary">Primary</a>'
+            br
+            = '<a href="#" class="btn success">Success</a>'
+            br
+            = '<a href="#" class="btn info">Info</a>'
+            br
+            = '<a href="#" class="btn warning">Warning</a>'
+            br
+            = '<a href="#" class="btn danger">Danger</a>'
+            br
+            = '<a href="#" class="btn link">Link</a>'
+            br
+      h6 Output
+      .example
+        a.btn.default href="#" Default
+        a.btn.primary href="#" Primary
+        a.btn.success href="#" Success
+        a.btn.info href="#" Info
+        a.btn.warning href="#" Warning
+        a.btn.danger href="#" Danger
+        a.btn.link href="#" Link
 
-    h3 Button size
-    h6 Usage
-    pre
-      code
-        header HTML
-        p
-          = '<a href="#" class="btn default small">Default small</a>'
-          br
-          = '<a href="#" class="btn primary small">Primary small</a>'
-          br
-          = '<a href="#" class="btn default">Default normal</a>'
-          br
-          = '<a href="#" class="btn primary">Primary normal</a>'
-          br
-          = '<a href="#" class="btn default big">Default big</a>'
-          br
-          = '<a href="#" class="btn primary big">Primary big</a>'
-    h6 Output
-    .example
-      a.btn.default.small href="#" Default Small
-      a.btn.primary.small href="#" Primary Small
-      a.btn.default href="#" Default normal
-      a.btn.primary href="#" Primary normal
-      a.btn.default.big href="#" Default Big
-      a.btn.primary.big href="#" Primary Big
-    h3 Button statics
-    h6 Usage
-    pre
-      code
-        header HTML
-        p
-          = '<a href="#" class="btn default active">Default Active</a>'
-          br
-          = '<a href="#" class="btn primary active">Primary active</a>'
-          br
-          = '<a href="#" class="btn default disabled">Default disabled</a>'
-          br
-          = '<a href="#" class="btn primary disabled">Primary disabled</a>'
-    h6 Output
-    .example
-      a.btn.default.active href="#" Default Active
-      a.btn.primary.active href="#" Primary Active
-      a.btn.default.disabled href="#" Default Disabled
-      a.btn.primary.disabled href="#" Primary Disabled
+      section
+        h3 Button size
+        h6 Usage
+        pre
+          code
+            header HTML
+            p
+              = '<a href="#" class="btn default small">Default small</a>'
+              br
+              = '<a href="#" class="btn primary small">Primary small</a>'
+              br
+              = '<a href="#" class="btn default">Default normal</a>'
+              br
+              = '<a href="#" class="btn primary">Primary normal</a>'
+              br
+              = '<a href="#" class="btn default big">Default big</a>'
+              br
+              = '<a href="#" class="btn primary big">Primary big</a>'
+        h6 Output
+        .example
+          a.btn.default.small href="#" Default Small
+          a.btn.primary.small href="#" Primary Small
+          a.btn.default href="#" Default normal
+          a.btn.primary href="#" Primary normal
+          a.btn.default.big href="#" Default Big
+          a.btn.primary.big href="#" Primary Big
 
-    h2 Own buttons
-    h3 button-variant
-    p 
-      | You can easily add new Button variations via the mixin
-      code button-variant($color, $background, $border)
-      |  . 
-    h3 button-size
-    p 
-      | You can easily add new Button sizes via the mixin
-      code button-size($padding, $font-size, $line-height, $border-radius)
-      |  .
+      section
+        h3 Button statics
+        h6 Usage
+        pre
+          code
+            header HTML
+            p
+              = '<a href="#" class="btn default active">Default Active</a>'
+              br
+              = '<a href="#" class="btn primary active">Primary active</a>'
+              br
+              = '<a href="#" class="btn default disabled">Default disabled</a>'
+              br
+              = '<a href="#" class="btn primary disabled">Primary disabled</a>'
+        h6 Output
+        .example
+          a.btn.default.active href="#" Default Active
+          a.btn.primary.active href="#" Primary Active
+          a.btn.default.disabled href="#" Default Disabled
+          a.btn.primary.disabled href="#" Primary Disabled
+
+    section
+      h2 Own buttons
+
+      section
+        h3 button-variant
+        p 
+          | You can easily add new Button variations via the mixin
+          code button-variant($color, $background, $border)
+          |  . 
+
+      section
+        h3 button-size
+        p 
+          | You can easily add new Button sizes via the mixin
+          code button-size($padding, $font-size, $line-height, $border-radius)
+          |  .

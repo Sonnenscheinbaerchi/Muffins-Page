@@ -6,114 +6,126 @@
       li
         = link_to 'FAQ', page_path('getting-started/faq')
   .main.col-xs-9
-    h2 Get started
-    ol
-      li Download grid and theme
-      li Install Ruby
-      li Install Sass
-      li Include the grid and theme in your project
+    section
+      h2 Get started
+      ol
+        li Download grid and theme
+        li Install Ruby
+        li Install Sass
+        li Include the grid and theme in your project
 
-    h2 Download
-    p muffins offers various possibilities for a quick start.
-    p The special of muffins is: It is a pure Sass-Framework! We offer no CSS variants, because you should first create your grid individually. The whole interaction of grid, theme and your costum styles works in Sass.
-    h3 The grid
-    a.btn.primary href="#" Download grid
+    section
+      h2 Download
+      p muffins offers various possibilities for a quick start.
+      p The special of muffins is: It is a pure Sass-Framework! We offer no CSS variants, because you should first create your grid individually. The whole interaction of grid, theme and your costum styles works in Sass.
+      
+      section
+        h3 The grid
+        a.btn.primary href="#" Download grid
 
-    h3 Themes
-    a.btn.primary href="#" Download default theme
+      section
+        h3 Themes
+        a.btn.primary href="#" Download default theme
 
-    h2 Install Ruby
-    p TODO
+    section
+      h2 Install Ruby
+      p TODO
 
-    h2 Install Sass
-    p TODO
+    section
+      h2 Install Sass
+      p TODO
 
-    h2 Include the grid and theme in your project
-    h3 Include grid
-    p In the download package you will find the folder "muffins" with the following file structure. This folder contains all the components of the grid.
-    ul
-      li.folder 
-        | muffins
+    section
+      h2 Include the grid and theme in your project
+      
+      section
+        h3 Include grid
+        p In the download package you will find the folder "muffins" with the following file structure. This folder contains all the components of the grid.
         ul
           li.folder 
-            | config
+            | muffins
             ul
-              li.file _grid.scss
-          li.folder 
-             | mixins
-             ul
-                li.file _grid.scss
-          li.folder
-            | modules
-            ul
-              li.file _global.scss
-              li.file _grid.scss
-              li.file _utility-classes.scss
-          li.folder
-            | reset
-            ul
-              li.file _base.scss
-              li.file _html5.scss
-              li.file _lists.scss
-              li.file _typography.scss
-          li.file style.scss
-
-    p Now add the muffins folder in your project.
-    p 
-      | Here you can have a custom settings for your grid (for further explanation, see 
-      a href="#" Grid
-      | ).
-    p Then you need to include the framework in your project's own Sass file
-    pre
-      code.highlight = '@import "[Pfad zum muffins-Ordner]/style"'
-    p Now you can use the grid.
-    h3 Include theme
-    p In the download package you will find a folder with the theme name with the following exemplary folder structure. This folder contains all components of the theme. Note here that the files here quite differently named, removed, or may have been added in addition.
-    ul
-      li.folder
-        | [filename theme]
-        ul
-          li.folder 
-            | config
-            ul
-              li.file _buttons.scss
-              li.file _colors.scss
-              li.file _layout.scss
-              li.file _typography.scss
-          li.folder 
-            | mixins
-            ul
-              li.file _buttons.scss
-              li.file _typography.scss
-          li.folder
-            | patterns
-            ul
-              li.folder
-                | blocks
+              li.folder 
+                | config
                 ul
-                  li.file _buttons.scss
-                  li.file _code.scss
-                  li.file _lists.scss
-                  li.file _typography.scss
-              li.folder
-                | components
-                ul
-                  li.file _navigation.scss
-                  li.file _callouts-prompts.scss
+                  li.file _grid.scss
+              li.folder 
+                 | mixins
+                 ul
+                    li.file _grid.scss
               li.folder
                 | modules
                 ul
-                  li.file _header.scss
-                  li.file _layout.scss
-                  li.file _topbar.scss
-                  li.file _footer.scss
-                  li.file _product.scss
+                  li.file _global.scss
+                  li.file _grid.scss
+                  li.file _utility-classes.scss
+              li.folder
+                | reset
+                ul
+                  li.file _base.scss
+                  li.file _html5.scss
+                  li.file _lists.scss
+                  li.file _typography.scss
+              li.file style.scss
+
+        p Now add the muffins folder in your project.
+        p 
+          | Here you can have a custom settings for your grid (for further explanation, see 
+          a href="#" Grid
+          | ).
+        p Then you need to include the framework in your project's own Sass file
+        pre
+          code.highlight = '@import "[Pfad zum muffins-Ordner]/style"'
+        p Now you can use the grid.
+
+      section
+        h3 Include theme
+        p In the download package you will find a folder with the theme name with the following exemplary folder structure. This folder contains all components of the theme. Note here that the files here quite differently named, removed, or may have been added in addition.
+        ul
           li.folder
-            | vendor
-      li.file style.scss
-    p Now add the theme folder to your project.
-    p Then you need to include the framework in your project's own Sass file. 
-    pre
-      code.highlight
-        = '@import "[Path to the theme folder]/style"'
-    p Now you can use the theme.
+            | [filename theme]
+            ul
+              li.folder 
+                | config
+                ul
+                  li.file _buttons.scss
+                  li.file _colors.scss
+                  li.file _layout.scss
+                  li.file _typography.scss
+              li.folder 
+                | mixins
+                ul
+                  li.file _buttons.scss
+                  li.file _typography.scss
+              li.folder
+                | patterns
+                ul
+                  li.folder
+                    | blocks
+                    ul
+                      li.file _buttons.scss
+                      li.file _code.scss
+                      li.file _lists.scss
+                      li.file _typography.scss
+                  li.folder
+                    | components
+                    ul
+                      li.file _navigation.scss
+                      li.file _callouts-prompts.scss
+                  li.folder
+                    | modules
+                    ul
+                      li.file _header.scss
+                      li.file _layout.scss
+                      li.file _topbar.scss
+                      li.file _footer.scss
+                      li.file _product.scss
+              li.folder
+                | vendor
+          li.file style.scss
+        p Now add the theme folder to your project.
+        p Then you need to include the framework in your project's own Sass file. 
+        pre
+          code.highlight
+            = '@import "[Path to the theme folder]/style"'
+        p Now you can use the theme.

@@ -10,7 +10,9 @@
       li
         = link_to 'Icons', page_path('docs/icons')
   .main.col-xs-9
+    section
       p muffins comes standard with a 12-column repsonsive grid, with the mobile first approach. The grid can be based on the viewport or a maximum width. The special feature of grid in muffins is that you can define both the number of breakpoints and the number of columns and their distances completely variable. So you can you quickly and easily create your own grid.
+    section
       h2 Variables
       h3 grid-max-width
       p The maximum width of the grids can be specified in pixels, em or percentages.
@@ -28,6 +30,7 @@
         | Simply enter your class name, the min-width and max-width and you're ready to generate your own grid.
       p = "default: ('xl', 1261px, null), ('lg', 961px, null), ('md', 641px, null), ('xl', 321px, null), ('xs', 220px, null)"
 
+    section
       h2 The default grid
       p The default grid classes are composed of the prefix "col", the class name and the number of columns together (this will be "-" separated), eg . "col-xs-6"
       h6 Usage
@@ -255,7 +258,7 @@
           .col-xs-1
             = '.col-xs-1'
 
-
+    section
       h2 Nested Grid
       p 
         | All Grid classes you can nest arbitrarily. For this, you need only create a new 
@@ -305,51 +308,55 @@
               .col-xs-6
                 = '.col-xs-6'
 
+    section
       h2 Visibilty Classes
       p With Visibilty classes you can depending of the screen size and orientation and hide elements.
 
-      h3 Screen sizes detection
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<div class="row">'
-            br
-            = '  <div class="col-xs-12 hide-md">.col-xs-12 .hide-md</div>'
-            br
-            = '  <div class="col-xs-12 hide-xs show-md">.col-xs-12 .hide-xs .show-md</div>'
-            br
-            = '</div>'
-      h6 Output
-      .example.grid
-        .row
-          .col-xs-12.hide-md
-            = '.col-x-12 .hide-md'
-          .col-xs-12.hide-xs.show-md
-            = '.col-xs-12 .hide-xs .show-md'
+      section
+        h3 Screen sizes detection
+        h6 Usage
+        pre
+          code
+            header HTML
+            p
+              = '<div class="row">'
+              br
+              = '  <div class="col-xs-12 hide-md">.col-xs-12 .hide-md</div>'
+              br
+              = '  <div class="col-xs-12 hide-xs show-md">.col-xs-12 .hide-xs .show-md</div>'
+              br
+              = '</div>'
+        h6 Output
+        .example.grid
+          .row
+            .col-xs-12.hide-md
+              = '.col-x-12 .hide-md'
+            .col-xs-12.hide-xs.show-md
+              = '.col-xs-12 .hide-xs .show-md'
 
-      h3 Orientation detection
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<div class="row">'
-            br
-            = '  <div class="col-xs-12 hide-for-landscape">.col-xs-12 .hide-for-landscape (is portrait)</div>'
-            br
-            = '  <div class="col-xs-12 hide-for-portrait">.col-xs-12 .hide-for-portrait (is landscape)</div>'
-            br
-            = '</div>'
-      h6 Output
-      .example.grid
-        .row
-          .col-xs-12.hide-for-landscape
-            = '.col-x-12 .hide-for-landscape (is portrait)'
-          .col-xs-12.hide-for-portrait
-            = '.col-xs-12 .hide-for-portrait (is landscape)'
+      section
+        h3 Orientation detection
+        h6 Usage
+        pre
+          code
+            header HTML
+            p
+              = '<div class="row">'
+              br
+              = '  <div class="col-xs-12 hide-for-landscape">.col-xs-12 .hide-for-landscape (is portrait)</div>'
+              br
+              = '  <div class="col-xs-12 hide-for-portrait">.col-xs-12 .hide-for-portrait (is landscape)</div>'
+              br
+              = '</div>'
+        h6 Output
+        .example.grid
+          .row
+            .col-xs-12.hide-for-landscape
+              = '.col-x-12 .hide-for-landscape (is portrait)'
+            .col-xs-12.hide-for-portrait
+              = '.col-xs-12 .hide-for-portrait (is landscape)'
 
+    section
       h2 Ordering classes
       p With the ordering classes you can customize the order of your container without changing the HTML code.
       h6 Usage
@@ -372,6 +379,7 @@
           .col-xs-3.pull-xs-9
             = '.col-xs-3 .pull-xs-9  (2. Div)'
 
+    section
       h2 Offset Classes
       p With the offset classes you can add any offset for columns. 
       h6 Usage

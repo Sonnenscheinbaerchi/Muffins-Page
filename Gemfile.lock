@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/thisisdmg/muffins-buttercream.git
-  revision: 2be2791539a43cb4068ae6539f0f1f998eafddd4
+  revision: b7a79c1186c46243491fb7d085996dd7f6e2c6be
   specs:
     muffins-buttercream (0.0.1)
       railties (~> 4.1)
