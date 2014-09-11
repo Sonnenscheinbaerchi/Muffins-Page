@@ -1,7 +1,7 @@
 .row
   sidebar.navigation.col-xs-3
     ul
-      li.active = link_to 'Buttercream', page_path('themes/buttercream')
+      li.active = link_to 'Buttercream', page_path('themes/buttercream/index')
       ul
         li
           = link_to 'Buttons', page_path('themes/buttercream/buttons')
@@ -17,22 +17,95 @@
           = link_to 'Callouts and prompts', page_path('themes/buttercream/callouts-prompts')
   .main.col-xs-9
     section
-      p muffins defines a set of prompts and callouts for default.
+      p buttercream defines a set of prompts and callouts for default.
 
     section
       h2 Alert boxes
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-      h6 Output
-      .example
-        .alert-box
-          p Soufflé sesame snaps chocolate chocolate bar cheesecake. Oat cake sugar plum cheesecake pie chupa chups pastry danish. Liquorice icing jujubes. Cotton candy sweet roll sweet roll sugar plum. Fruitcake ice cream cake croissant gummies caramels candy. Sugar plum bonbon pudding gummi bears liquorice. 
-        .alert-box.danger
-          p Sweet roll jujubes oat cake cookie chocolate bar applicake icing. Cookie sesame snaps cheesecake chupa chups fruitcake lemon drops sesame snaps. Pie cheesecake fruitcake liquorice brownie. 
-        .alert-box.warning
-          p Chocolate liquorice biscuit. Gummi bears cupcake cheesecake muffin applicake pudding powder. Caramels carrot cake jelly-o. Tiramisu gummies croissant dessert cake. Caramels jelly-o pie unerdwear.com apple pie gingerbread gingerbread. 
-        .alert-box.success
-          p Sesame snaps ice cream donut bonbon sweet roll tootsie roll liquorice pie jelly-o. Marzipan lemon drops cupcake. Caramels marzipan jujubes marshmallow oat cake halvah unerdwear.com tootsie roll bear claw.
+
+      form.tab-menu
+        input.state#alert-boxes-tab1 type="radio" name="alert-boxes"
+        input.state#alert-boxes-tab2 type="radio" checked="checked" name="alert-boxes" 
+        .tabs
+          label.tab1.tab for="alert-boxes-tab1" Usage
+          label.tab2.tab for="alert-boxes-tab2" Displays
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<div class="alert-box">'
+                br
+                = '  <p>Soufflé sesame snaps chocolate chocolate bar cheesecake. Oat cake sugar plum cheesecake pie chupa chups pastry danish. Liquorice icing jujubes. Cotton candy sweet roll sweet roll sugar plum. Fruitcake ice cream cake croissant gummies caramels candy. Sugar plum bonbon pudding gummi bears liquorice. </p>'
+                br
+                = '</div>'
+                br
+                br
+                = '<div class="alert-box danger">'
+                br
+                = '  <p>Sweet roll jujubes oat cake cookie chocolate bar applicake icing. Cookie sesame snaps cheesecake chupa chups fruitcake lemon drops sesame snaps. Pie cheesecake fruitcake liquorice brownie. </p>'
+                br
+                = '</div>'
+                br
+                br
+                = '<div class="alert-box warning">'
+                br
+                = '  <p>Chocolate liquorice biscuit. Gummi bears cupcake cheesecake muffin applicake pudding powder. Caramels carrot cake jelly-o. Tiramisu gummies croissant dessert cake. Caramels jelly-o pie unerdwear.com apple pie gingerbread gingerbread. </p>'
+                br
+                = '</div>'
+                br
+                br
+                = '<div class="alert-box success">'
+                br
+                = '  <p>Sesame snaps ice cream donut bonbon sweet roll tootsie roll liquorice pie jelly-o. Marzipan lemon drops cupcake. Caramels marzipan jujubes marshmallow oat cake halvah unerdwear.com tootsie roll bear claw.</p>'
+                br
+                = '</div>'
+          #tab2-panel.panel
+            .example
+              .alert-box
+                p Soufflé sesame snaps chocolate chocolate bar cheesecake. Oat cake sugar plum cheesecake pie chupa chups pastry danish. Liquorice icing jujubes. Cotton candy sweet roll sweet roll sugar plum. Fruitcake ice cream cake croissant gummies caramels candy. Sugar plum bonbon pudding gummi bears liquorice. 
+              .alert-box.danger
+                p Sweet roll jujubes oat cake cookie chocolate bar applicake icing. Cookie sesame snaps cheesecake chupa chups fruitcake lemon drops sesame snaps. Pie cheesecake fruitcake liquorice brownie. 
+              .alert-box.warning
+                p Chocolate liquorice biscuit. Gummi bears cupcake cheesecake muffin applicake pudding powder. Caramels carrot cake jelly-o. Tiramisu gummies croissant dessert cake. Caramels jelly-o pie unerdwear.com apple pie gingerbread gingerbread. 
+              .alert-box.success
+                p Sesame snaps ice cream donut bonbon sweet roll tootsie roll liquorice pie jelly-o. Marzipan lemon drops cupcake. Caramels marzipan jujubes marshmallow oat cake halvah unerdwear.com tootsie roll bear claw.
+
+    section
+      h2 Own alert boxes
+
+      section
+        h3 generate-alert-box
+        p 
+          | You can easily add new alert boxes variations via the mixin
+          code generate-alert-box($background-color: $color-gray-lighter, $color: $color-black)
+          |  . 
+      form.tab-menu
+        input.state#generate-alert-boxes-tab1 checked="checked" type="radio" name="generate-alert-boxes"
+        .tabs
+          label.tab1.tab for="generate-alert-boxes-tab1" Usage
+        .panels
+          pre#tab1-panel.panel
+            code
+              header SCSS
+              p
+                = '.alert-box {'
+                br
+                = '  &.myAlertBox {'
+                br
+                = '    @include generate-alert-box(red, yellow);'
+                br
+                = '  }'
+                br
+                = '}'
+
+
+    section
+      h2 Layout variables
+
+      h3 padding-alert-box
+      p Defines the padding for all alert boxes.
+      p = "default: $space"
+
+      h3 border-radius-alert-box
+      p Defines the border radius for all alert boxes.
+      p = "default: $border-radius-default"

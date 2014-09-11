@@ -1,7 +1,7 @@
 .row
   sidebar.navigation.col-xs-3
     ul
-      li.active = link_to 'Buttercream', page_path('themes/buttercream')
+      li.active = link_to 'Buttercream', page_path('themes/buttercream/index')
       ul
         li.active
           = link_to 'Buttons', page_path('themes/buttercream/buttons')
@@ -19,82 +19,101 @@
     section
       h2 Predefined buttons
       p To quickly use buttons you can use the pre-defined buttons of the theme.
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<a href="#" class="btn default">Default</a>'
-            br
-            = '<a href="#" class="btn primary">Primary</a>'
-            br
-            = '<a href="#" class="btn success">Success</a>'
-            br
-            = '<a href="#" class="btn info">Info</a>'
-            br
-            = '<a href="#" class="btn warning">Warning</a>'
-            br
-            = '<a href="#" class="btn danger">Danger</a>'
-            br
-            = '<a href="#" class="btn link">Link</a>'
-            br
-      h6 Output
-      .example
-        a.btn.default href="#" Default
-        a.btn.primary href="#" Primary
-        a.btn.success href="#" Success
-        a.btn.info href="#" Info
-        a.btn.warning href="#" Warning
-        a.btn.danger href="#" Danger
-        a.btn.link href="#" Link
+
+      form.tab-menu
+        input.state#predefined-buttons-tab1 type="radio" name="predefined-buttons"
+        input.state#predefined-buttons-tab2 type="radio" checked="checked" name="predefined-buttons" 
+        .tabs
+          label.tab1.tab for="predefined-buttons-tab1" Usage
+          label.tab2.tab for="predefined-buttons-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<a href="#" class="btn default">Default</a>'
+                br
+                = '<a href="#" class="btn primary">Primary</a>'
+                br
+                = '<a href="#" class="btn success">Success</a>'
+                br
+                = '<a href="#" class="btn info">Info</a>'
+                br
+                = '<a href="#" class="btn warning">Warning</a>'
+                br
+                = '<a href="#" class="btn danger">Danger</a>'
+                br
+                = '<a href="#" class="btn link">Link</a>'
+          #tab2-panel.panel
+            .example
+              a.btn.default href="#" Default
+              a.btn.primary href="#" Primary
+              a.btn.success href="#" Success
+              a.btn.info href="#" Info
+              a.btn.warning href="#" Warning
+              a.btn.danger href="#" Danger
+              a.btn.link href="#" Link
 
       section
         h3 Button size
-        h6 Usage
-        pre
-          code
-            header HTML
-            p
-              = '<a href="#" class="btn default small">Default small</a>'
-              br
-              = '<a href="#" class="btn primary small">Primary small</a>'
-              br
-              = '<a href="#" class="btn default">Default normal</a>'
-              br
-              = '<a href="#" class="btn primary">Primary normal</a>'
-              br
-              = '<a href="#" class="btn default big">Default big</a>'
-              br
-              = '<a href="#" class="btn primary big">Primary big</a>'
-        h6 Output
-        .example
-          a.btn.default.small href="#" Default Small
-          a.btn.primary.small href="#" Primary Small
-          a.btn.default href="#" Default normal
-          a.btn.primary href="#" Primary normal
-          a.btn.default.big href="#" Default Big
-          a.btn.primary.big href="#" Primary Big
 
+        form.tab-menu
+          input.state#button-size-tab1 type="radio" name="button-size"
+          input.state#button-size-tab2 type="radio" checked="checked" name="button-size" 
+          .tabs
+            label.tab1.tab for="button-size-tab1" Usage
+            label.tab2.tab for="button-size-tab2" Display
+          .panels
+            pre#tab1-panel.panel
+              code
+                header HTML
+                p
+                  = '<a href="#" class="btn default small">Default small</a>'
+                  br
+                  = '<a href="#" class="btn primary small">Primary small</a>'
+                  br
+                  = '<a href="#" class="btn default">Default normal</a>'
+                  br
+                  = '<a href="#" class="btn primary">Primary normal</a>'
+                  br
+                  = '<a href="#" class="btn default big">Default big</a>'
+                  br
+                  = '<a href="#" class="btn primary big">Primary big</a>'
+            #tab2-panel.panel
+              .example
+                a.btn.default.small href="#" Default Small
+                a.btn.primary.small href="#" Primary Small
+                a.btn.default href="#" Default normal
+                a.btn.primary href="#" Primary normal
+                a.btn.default.big href="#" Default Big
+                a.btn.primary.big href="#" Primary Big
       section
         h3 Button statics
-        h6 Usage
-        pre
-          code
-            header HTML
-            p
-              = '<a href="#" class="btn default active">Default Active</a>'
-              br
-              = '<a href="#" class="btn primary active">Primary active</a>'
-              br
-              = '<a href="#" class="btn default disabled">Default disabled</a>'
-              br
-              = '<a href="#" class="btn primary disabled">Primary disabled</a>'
-        h6 Output
-        .example
-          a.btn.default.active href="#" Default Active
-          a.btn.primary.active href="#" Primary Active
-          a.btn.default.disabled href="#" Default Disabled
-          a.btn.primary.disabled href="#" Primary Disabled
+
+        form.tab-menu
+          input.state#button-statics-tab1 type="radio" name="button-statics"
+          input.state#button-statics-tab2 type="radio" checked="checked" name="button-statics" 
+          .tabs
+            label.tab1.tab for="button-statics-tab1" Usage
+            label.tab2.tab for="button-statics-tab2" Display
+          .panels
+            pre#tab1-panel.panel
+              code
+                header HTML
+                p
+                  = '<a href="#" class="btn default active">Default Active</a>'
+                  br
+                  = '<a href="#" class="btn primary active">Primary active</a>'
+                  br
+                  = '<a href="#" class="btn default disabled">Default disabled</a>'
+                  br
+                  = '<a href="#" class="btn primary disabled">Primary disabled</a>'
+            #tab2-panel.panel
+              .example
+                a.btn.default.active href="#" Default Active
+                a.btn.primary.active href="#" Primary Active
+                a.btn.default.disabled href="#" Default Disabled
+                a.btn.primary.disabled href="#" Primary Disabled
 
     section
       h2 Own buttons
@@ -105,6 +124,24 @@
           | You can easily add new Button variations via the mixin
           code button-variant($color, $background, $border)
           |  . 
+        form.tab-menu
+          input.state#button-variant-tab1 checked="checked" type="radio" name="button-variant"
+          .tabs
+            label.tab1.tab for="button-variant-tab1" Usage
+          .panels
+            pre#tab1-panel.panel
+              code
+                header SCSS
+                p
+                  = '.btn {'
+                  br
+                  = '  &.myButton {'
+                  br
+                  = '    @include button-variant(black, gray, 1px solid blue);'
+                  br
+                  = '  }'
+                  br
+                  = '}'
 
       section
         h3 button-size
@@ -112,3 +149,27 @@
           | You can easily add new Button sizes via the mixin
           code button-size($padding, $font-size, $line-height, $border-radius)
           |  .
+        form.tab-menu
+          input.state#button-size-tab1  checked="checked" type="radio" name="button-size"
+          .tabs
+            label.tab1.tab for="button-size-tab1" Usage
+          .panels
+            pre#tab1-panel.panel
+              code
+                header SCSS
+                p
+                  = '.btn {'
+                  br
+                  = '  &.myButton {'
+                  br
+                  = '    @include button-size(8px, 24px, 28px, 4px);'
+                  br
+                  = '  }'
+                  br
+                  = '}'
+    section
+      h2 Layout variables
+
+      h3 border-radius-button
+      p Defines the border-radius for all buttons.
+      p = "default: $border-radius-default"

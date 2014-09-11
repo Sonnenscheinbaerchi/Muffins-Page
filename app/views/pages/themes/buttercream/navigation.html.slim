@@ -1,7 +1,7 @@
 .row
   sidebar.navigation.col-xs-3
     ul
-      li.active = link_to 'Buttercream', page_path('themes/buttercream')
+      li.active = link_to 'Buttercream', page_path('themes/buttercream/index')
       ul
         li
           = link_to 'Buttons', page_path('themes/buttercream/buttons')
@@ -19,24 +19,76 @@
     section
       h2 Inline Lists
 
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<ul class="inline">'
-            br
-            = '  <li> Tiramisu </li>'
-            br
-            = '  <li> Dessert </li>'
-            br
-            = '  <li> Candy chocolate </li>'
-            br
-            = '</ul>'
-      h6 Output
-      .example
-        ul.inline
-          li Tiramisu
-          li Dessert
-          li Candy chocolate
+      form.tab-menu
+        input.state#inline-lists-tab1 type="radio" name="inline-lists"
+        input.state#inline-lists-tab2 type="radio" checked="checked" name="inline-lists" 
+        .tabs
+          label.tab1.tab for="inline-lists-tab1" Usage
+          label.tab2.tab for="inline-lists-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<ul class="inline">'
+                br
+                = '  <li> Tiramisu </li>'
+                br
+                = '  <li> Dessert </li>'
+                br
+                = '  <li> Candy chocolate </li>'
+                br
+                = '</ul>'
+          #tab2-panel.panel
+            .example
+              ul.inline
+                li Tiramisu
+                li Dessert
+                li Candy chocolate
+    section
+      h2 Tab-Menu
+      p In buttercream you can easily create a tab-menu with radio-buttons. Wait! Radio-buttons? Yes, radio-buttons! The advantage of radio-buttons to use is that no additional javascript has to be loaded. You can switch between the tab, when you check or uncheck radio-boxes. 
 
+      h3 Variables
+      p To configure the tab-menu you got some variables.
+      
+      h4 count-tab-menu
+      p the maximum number of generated classes for the number of tabs
+      p = "default: 10"
+
+      form.tab-menu
+        input.state#inline-lists-tab1 type="radio" name="inline-lists"
+        input.state#inline-lists-tab2 type="radio" checked="checked" name="inline-lists" 
+        .tabs
+          label.tab1.tab for="inline-lists-tab1" Usage
+          label.tab2.tab for="inline-lists-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<ul class="inline">'
+                br
+                = '  <li> Tiramisu </li>'
+                br
+                = '  <li> Dessert </li>'
+                br
+                = '  <li> Candy chocolate </li>'
+                br
+                = '</ul>'
+          #tab2-panel.panel
+            .example
+              ul.inline
+                li Tiramisu
+                li Dessert
+                li Candy chocolate
+    section
+      h2 Layout variables
+
+      h3 color-border-tab-menu
+      p Defines the border color for tabs in tab-menu.
+      p = "default: $color-gray-lighter"
+
+      h3 border-radius-tab-menu
+      p Defines the border radius for tabs in tab-menu.
+      p = "default: $border-radius-default"

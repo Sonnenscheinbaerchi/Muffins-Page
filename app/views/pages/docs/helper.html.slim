@@ -27,23 +27,29 @@
           code .clearfix
           |  elements can be positioned quickly and easily.
 
-        h6 Usage
-        pre
-          code
-            header HTML
-            p
-              = '<div class="clearfix">'
-              br
-              = '   <a class="btn primary left">.left</a>'
-              br
-              = '   <a class="btn primary right">.right</a>'
-              br
-              = '</div>'
-        h6 Output
-        .example
-          .clearfix
-            a.btn.primary.left = " .left"
-            a.btn.primary.right= ".right"
+        form.tab-menu
+          input.state#floating-tab1 type="radio" name="floating"
+          input.state#floating-tab2 type="radio" checked="checked" name="floating" 
+          .tabs
+            label.tab1.tab for="floating-tab1" Usage
+            label.tab2.tab for="floating-tab2" Display
+          .panels
+            pre#tab1-panel.panel
+              code
+                header HTML
+                p
+                  = '<div class="clearfix">'
+                  br
+                  = '   <a class="btn primary left">.left</a>'
+                  br
+                  = '   <a class="btn primary right">.right</a>'
+                  br
+                  = '</div>'
+            #tab2-panel.panel
+              .example
+                .clearfix
+                  a.btn.primary.left = " .left"
+                  a.btn.primary.right= ".right"
 
       section
         h3 Hide 
@@ -53,11 +59,15 @@
             | To hide an item you can just use the class 
             code .hide
             |  . 
-          h6 Usage
-          pre
-            code
-              header HTML
-              p = '<div class="hide"></div>'
+          form.tab-menu
+            input.state#hide-elements-tab1 type="radio" checked="checked"  name="hide-elements"
+            .tabs
+              label.tab1.tab for="hide-elements-tab1" Usage
+            .panels
+              pre#tab1-panel.panel
+                code
+                  header HTML
+                  p = '<div class="hide"></div>'
         section
           h4 Hide Text
           p 
@@ -74,45 +84,49 @@
           | To quickly and easily determine the size of an element, you can use the mixin 
           code size($width, $height: $width)
           |  .
-        h6 Usage
-        pre
-          code.scss
-            header SCSS
-            p
-              = 'div1 {'
-              br
-              = '  @include size(50px);'
-              br
-              = '}'
-              br
-              = 'div2 {'
-              br
-              = '  @include size(100px, 20px);'
-              br
-              = '}'
-              br
-              br
-        h6 Output
-        pre
-          code.css
-            header CSS
-            p
-              = 'div1 {'
-              br
-              = '  width: 50px;'
-              br
-              = '  height: 50px;'
-              br
-              = '}'
-              br
-              = 'div2 {'
-              br
-              = ' width: 100px;'
-              br
-              = ' height: 20px;'
-              br
-              = '}'
 
+        form.tab-menu
+          input.state#mixins-tab1 type="radio" name="mixins"
+          input.state#mixins-tab2 type="radio" checked="checked" name="mixins" 
+          .tabs
+            label.tab1.tab for="mixins-tab1" Usage
+            label.tab2.tab for="mixins-tab2" Output
+          .panels
+            pre#tab1-panel.panel
+              code
+                header SCSS
+                p
+                  = 'div1 {'
+                  br
+                  = '  @include size(50px);'
+                  br
+                  = '}'
+                  br
+                  = 'div2 {'
+                  br
+                  = '  @include size(100px, 20px);'
+                  br
+                  = '}'
+                  br
+            pre#tab2-panel.panel
+              code
+                header CSS
+                p
+                  = 'div1 {'
+                  br
+                  = '  width: 50px;'
+                  br
+                  = '  height: 50px;'
+                  br
+                  = '}'
+                  br
+                  = 'div2 {'
+                  br
+                  = ' width: 100px;'
+                  br
+                  = ' height: 20px;'
+                  br
+                  = '}'
       section
         h3 Positioning 
         p
@@ -153,7 +167,7 @@
           code $retina-suffix
           | ) to configure.
           
-      sectino
+      section
         h3 Styles
         p muffins contains some mixins for style for different browsers
         h4 Placeholder
@@ -161,42 +175,47 @@
           | To fetch alle placeholder-versionin css you can easily use the 
           code placeholder()
           |  mixin. 
-        h6 Usage
-        pre
-          code
-            header SCSS
-            p
-              = 'input {'
-              br
-              = '  color: blue;'
-              br
-              = '  @include placeholder {'
-              br
-              = '     color: red;'
-              br
-              = '  }'
-              br
-              = '}'
-        h6 Output
-        pre
-          code
-            header CSS
-            p
-               = 'input {'
-               br
-               = '  color:blue;'
-               br
-               = '}'
-               br
-               = 'input::-webkit-input-placeholder,  // WebKit and Blink (Safari, Google Chrome, Opera 15+) '
-               br
-               = 'input:-moz-placeholder, / /Mozilla Firefox 4 to 18 '
-               br
-               = 'input::-moz-placeholder, // Mozilla Firefox 19+ '
-               br
-               = 'input:-ms-input-placeholder {  // Internet Explorer 10'
-               br
-               = '  color: red;'
-               br
-               = '}'
 
+        form.tab-menu
+          input.state#mixins-tab1 type="radio" name="mixins"
+          input.state#mixins-tab2 type="radio" checked="checked" name="mixins" 
+          .tabs
+            label.tab1.tab for="mixins-tab1" Usage
+            label.tab2.tab for="mixins-tab2" Output
+          .panels
+            pre#tab1-panel.panel
+              code
+                header SCSS
+                p
+                  = 'input {'
+                  br
+                  = '  color: blue;'
+                  br
+                  = '  @include placeholder {'
+                  br
+                  = '     color: red;'
+                  br
+                  = '  }'
+                  br
+                  = '}'
+            pre#tab2-panel.panel
+              code
+                header CSS
+                p
+                   = 'input {'
+                   br
+                   = '  color:blue;'
+                   br
+                   = '}'
+                   br
+                   = 'input::-webkit-input-placeholder,  // WebKit and Blink (Safari, Google Chrome, Opera 15+) '
+                   br
+                   = 'input:-moz-placeholder, / /Mozilla Firefox 4 to 18 '
+                   br
+                   = 'input::-moz-placeholder, // Mozilla Firefox 19+ '
+                   br
+                   = 'input:-ms-input-placeholder {  // Internet Explorer 10'
+                   br
+                   = '  color: red;'
+                   br
+                   = '}'

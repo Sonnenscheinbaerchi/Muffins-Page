@@ -33,231 +33,289 @@
     section
       h2 The default grid
       p The default grid classes are composed of the prefix "col", the class name and the number of columns together (this will be "-" separated), eg . "col-xs-6"
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<div class="row">'
-            br
-            = '   <div class="col-xs-12">.col-xs-12</div>'
-            br
-            = '</div>'
-      h6 Output
-      .example.grid
-        .row
-          .col-xs-12
-            = '.col-xs-12'
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<div class="row">'
-            br
-            = '   <div class="col-xs-1">.col-xs-1</div>'
-            br
-            = '   <div class="col-xs-11">.col-xs-11</div>'
-            br
-            = '</div>'
-      h6 Output
-      .example.grid
-        .row
-          .col-xs-1
-            = '.col-xs-1'
-          .col-xs-11
-            = '.col-xs-11'
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<div class="row">'
-            br
-            = '   <div class="col-xs-2">.col-xs-2</div>'
-            br
-            = '   <div class="col-xs-10">.col-xs-10</div>'
-            br
-            = '</div>'
-      h6 Output
-      .example.grid
-        .row
-          .col-xs-2
-            = '.col-xs-2'
-          .col-xs-10
-            = '.col-xs-10'
-      h6 Usage
-      pre
-        code
-          header
-          p
-            = '<div class="row">'
-            br
-            = '   <div class="col-xs-3">.col-xs-3</div>'
-            br
-            = '   <div class="col-xs-9">.col-xs-9</div>'
-            br
-            = '</div>'
-      h6 Output
-      .example.grid
-        .row
-          .col-xs-3
-            = '.col-xs-3'
-          .col-xs-9
-            = '.col-xs-9'
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<div class="row">'
-            br
-            = '   <div class="col-xs-4">.col-xs-4</div>'
-            br
-            = '   <div class="col-xs-8">.col-xs-8</div>'
-            br
-            = '</div>'
-      h6 Output
-      .example.grid
-        .row
-          .col-xs-4
-            = '.col-xs-4'
-          .col-xs-8
-            = '.col-xs-8'
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<div class="row">'
-            br
-            = '   <div class="col-xs-5">.col-xs-5</div>'
-            br
-            = '   <div class="col-xs-7">.col-xs-7</div>'
-            br
-            = '</div>'
-      h6 Output
-      .example.grid
-        .row
-          .col-xs-5
-            = '.col-xs-5'
-          .col-xs-7
-            = '.col-xs-7'
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<div class="row">'
-            br
-            = '   <div class="col-xs-6">.col-xs-6</div>'
-            br
-            = '   <div class="col-xs-6">.col-xs-6</div>'
-            br
-            = '</div>'
-      h6 Output
-      .example.grid
-        .row
-          .col-xs-6
-            = '.col-xs-6'
-          .col-xs-6
-            = '.col-xs-6'
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<div class="row">'
-            br
-            = '   <div class="col-xs-7">.col-xs-7</div>'
-            br
-            = '   <div class="col-xs-5">.col-xs-5</div>'
-            br
-            = '</div>'
-      h6 Output
-      .example.grid
-        .row
-          .col-xs-7
-            = '.col-xs-7'
-          .col-xs-5
-            = '.col-xs-5'
-      h6 Usage
-      pre 
-        code
-          header HTML
-          p
-            = '<div class="row">'
-            br
-            = '   <div class="col-xs-8">.col-xs-8</div>'
-            br
-            = '   <div class="col-xs-4">.col-xs-4</div>'
-            br
-            = '</div>'
-      h6 Output
-      .example.grid
-        .row
-          .col-xs-8
-            = '.col-xs-8'
-          .col-xs-4
-            = '.col-xs-4'
-      h6 Usage
-      pre
-        code
-          header 
-          p
-            = '<div class="row">'
-            br
-            = '   <div class="col-xs-9">.col-xs-9</div>'
-            br
-            = '   <div class="col-xs-3">.col-xs-3</div>'
-            br
-            = '</div>'
-      h6 Output
-      .example.grid
-        .row
-          .col-xs-9
-            = '.col-xs-9'
-          .col-xs-3
-            = '.col-xs-3'
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<div class="row">'
-            br
-            = '   <div class="col-xs-10">.col-xs-10</div>'
-            br
-            = '   <div class="col-xs-2">.col-xs-2</div>'
-            br
-            = '</div>'
-      h6 Output
-      .example.grid
-        .row
-          .col-xs-10
-            = '.col-xs-10'
-          .col-xs-2
-            = '.col-xs-2'
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<div class="row">'
-            br
-            = '   <div class="col-xs-11">.col-xs-11</div>'
-            br
-            = '   <div class="col-xs-1">.col-xs-1</div>'
-            br
-            = '</div>'
-      h6 Output
-      .example.grid
-        .row
-          .col-xs-11
-            = '.col-xs-11'
-          .col-xs-1
-            = '.col-xs-1'
 
+      form.tab-menu
+        input.state#default-grid-tab1 type="radio" name="default-grid"
+        input.state#default-grid-tab2 type="radio" checked="checked" name="default-grid" 
+        .tabs
+          label.tab1.tab for="default-grid-tab1" Usage
+          label.tab2.tab for="default-grid-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<div class="row">'
+                br
+                = '   <div class="col-xs-12">.col-xs-12</div>'
+                br
+                = '</div>'
+          #tab2-panel.panel
+            .example.grid
+              .row
+                .col-xs-12
+                  = '.col-xs-12'
+
+      form.tab-menu
+        input.state#default-grid2-tab1 type="radio" name="default-grid2"
+        input.state#default-grid2-tab2 type="radio" checked="checked" name="default-grid2" 
+        .tabs
+          label.tab1.tab for="default-grid2-tab1" Usage
+          label.tab2.tab for="default-grid2-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<div class="row">'
+                br
+                = '   <div class="col-xs-1">.col-xs-1</div>'
+                br
+                = '   <div class="col-xs-11">.col-xs-11</div>'
+                br
+                = '</div>'
+          #tab2-panel.panel
+            .example.grid
+              .row
+                .col-xs-1
+                  = '.col-xs-1'
+                .col-xs-11
+                  = '.col-xs-11'
+
+      form.tab-menu
+        input.state#default-grid3-tab1 type="radio" name="default-grid3"
+        input.state#default-grid3-tab2 type="radio" checked="checked" name="default-grid3" 
+        .tabs
+          label.tab1.tab for="default-grid3-tab1" Usage
+          label.tab2.tab for="default-grid3-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<div class="row">'
+                br
+                = '   <div class="col-xs-2">.col-xs-2</div>'
+                br
+                = '   <div class="col-xs-10">.col-xs-10</div>'
+                br
+                = '</div>'
+          #tab2-panel.panel
+            .example.grid
+              .row
+                .col-xs-2
+                  = '.col-xs-2'
+                .col-xs-10
+                  = '.col-xs-10'
+
+      form.tab-menu
+        input.state#default-grid5-tab1 type="radio" name="default-grid5"
+        input.state#default-grid5-tab2 type="radio" checked="checked" name="default-grid5" 
+        .tabs
+          label.tab1.tab for="default-grid5-tab1" Usage
+          label.tab2.tab for="default-grid5-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<div class="row">'
+                br
+                = '   <div class="col-xs-4">.col-xs-4</div>'
+                br
+                = '   <div class="col-xs-8">.col-xs-8</div>'
+                br
+                = '</div>'
+          #tab2-panel.panel
+            .example.grid
+              .row
+                .col-xs-4
+                  = '.col-xs-4'
+                .col-xs-8
+                  = '.col-xs-8'
+
+
+      form.tab-menu
+        input.state#default-grid6-tab1 type="radio" name="default-grid6"
+        input.state#default-grid6-tab2 type="radio" checked="checked" name="default-grid6" 
+        .tabs
+          label.tab1.tab for="default-grid6-tab1" Usage
+          label.tab2.tab for="default-grid6-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<div class="row">'
+                br
+                = '   <div class="col-xs-5">.col-xs-5</div>'
+                br
+                = '   <div class="col-xs-7">.col-xs-7</div>'
+                br
+                = '</div>'
+          #tab2-panel.panel
+            .example.grid
+              .row
+                .col-xs-5
+                  = '.col-xs-5'
+                .col-xs-7
+                  = '.col-xs-7'
+
+      form.tab-menu
+        input.state#default-grid7-tab1 type="radio" name="default-grid7"
+        input.state#default-grid7-tab2 type="radio" checked="checked" name="default-grid7" 
+        .tabs
+          label.tab1.tab for="default-grid7-tab1" Usage
+          label.tab2.tab for="default-grid7-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<div class="row">'
+                br
+                = '   <div class="col-xs-6">.col-xs-6</div>'
+                br
+                = '   <div class="col-xs-6">.col-xs-6</div>'
+                br
+                = '</div>'
+          #tab2-panel.panel
+            .example.grid
+              .row
+                .col-xs-6
+                  = '.col-xs-6'
+                .col-xs-6
+                  = '.col-xs-6'
+
+      form.tab-menu
+        input.state#default-grid8-tab1 type="radio" name="default-grid8"
+        input.state#default-grid8-tab2 type="radio" checked="checked" name="default-grid8" 
+        .tabs
+          label.tab1.tab for="default-grid8-tab1" Usage
+          label.tab2.tab for="default-grid8-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<div class="row">'
+                br
+                = '   <div class="col-xs-7">.col-xs-7</div>'
+                br
+                = '   <div class="col-xs-5">.col-xs-5</div>'
+                br
+                = '</div>'
+          #tab2-panel.panel
+            .example.grid
+              .row
+                .col-xs-7
+                  = '.col-xs-7'
+                .col-xs-5
+                  = '.col-xs-5'
+
+      form.tab-menu
+        input.state#default-grid9-tab1 type="radio" name="default-grid9"
+        input.state#default-grid9-tab2 type="radio" checked="checked" name="default-grid9" 
+        .tabs
+          label.tab1.tab for="default-grid9-tab1" Usage
+          label.tab2.tab for="default-grid9-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<div class="row">'
+                br
+                = '   <div class="col-xs-8">.col-xs-8</div>'
+                br
+                = '   <div class="col-xs-4">.col-xs-4</div>'
+                br
+                = '</div>'
+          #tab2-panel.panel
+            .example.grid
+              .row
+                .col-xs-8
+                  = '.col-xs-8'
+                .col-xs-4
+                  = '.col-xs-4'
+
+      form.tab-menu
+        input.state#default-grid10-tab1 type="radio" name="default-grid10"
+        input.state#default-grid10-tab2 type="radio" checked="checked" name="default-grid10" 
+        .tabs
+          label.tab1.tab for="default-grid10-tab1" Usage
+          label.tab2.tab for="default-grid10-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<div class="row">'
+                br
+                = '   <div class="col-xs-9">.col-xs-9</div>'
+                br
+                = '   <div class="col-xs-3">.col-xs-3</div>'
+                br
+                = '</div>'
+          #tab2-panel.panel
+            .example.grid
+              .row
+                .col-xs-9
+                  = '.col-xs-9'
+                .col-xs-3
+                  = '.col-xs-3'
+
+      form.tab-menu
+        input.state#default-grid11-tab1 type="radio" name="default-grid11"
+        input.state#default-grid11-tab2 type="radio" checked="checked" name="default-grid11" 
+        .tabs
+          label.tab1.tab for="default-grid11-tab1" Usage
+          label.tab2.tab for="default-grid11-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<div class="row">'
+                br
+                = '   <div class="col-xs-10">.col-xs-10</div>'
+                br
+                = '   <div class="col-xs-2">.col-xs-2</div>'
+                br
+                = '</div>'
+          #tab2-panel.panel
+            .example.grid
+              .row
+                .col-xs-10
+                  = '.col-xs-10'
+                .col-xs-2
+                  = '.col-xs-2'
+
+      form.tab-menu
+        input.state#default-grid12-tab1 type="radio" name="default-grid12"
+        input.state#default-grid12-tab2 type="radio" checked="checked" name="default-grid12" 
+        .tabs
+          label.tab1.tab for="default-grid12-tab1" Usage
+          label.tab2.tab for="default-grid12-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<div class="row">'
+                br
+                = '   <div class="col-xs-11">.col-xs-11</div>'
+                br
+                = '   <div class="col-xs-1">.col-xs-1</div>'
+                br
+                = '</div>'
+          #tab2-panel.panel
+            .example.grid
+              .row
+                .col-xs-11
+                  = '.col-xs-11'
+                .col-xs-1
+                  = '.col-xs-1'
     section
       h2 Nested Grid
       p 

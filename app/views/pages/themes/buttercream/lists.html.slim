@@ -1,7 +1,7 @@
 .row
   sidebar.navigation.col-xs-3
     ul
-      li.active = link_to 'Buttercream', page_path('themes/buttercream')
+      li.active = link_to 'Buttercream', page_path('themes/buttercream/index')
       ul
         li
           = link_to 'Buttons', page_path('themes/buttercream/buttons')
@@ -21,213 +21,254 @@
 
       section
         h3 Disc Style
-        h6 Usage
-        pre
-          code
-            header HTML
-            p
-              = '<ul class="disc">'
-              br
-              = '  <li> Cupcake ipsum dolor sit. </li>'
-              br
-              = '  <li> Dragée biscuit applicake. </li>'
-              br
-              = '  <li> Cupcake macaroon carrot .'
-              br
-              = '    <ul>'
-              br
-              = '      <li> Chupa chups biscuit gummi bears. </li> '
-              br
-              = '      <li> Cake cheesecake jelly-o caramels jujubes chocolate cake. </li> '
-              br
-              = '    </ul>'
-              br
-              = '  </li>'
-              br
-              = '  <li> Candy I love cotton candy. </li>'
-              br
-              = '</ul>'
-        h6 Output
-        .example
-          ul.disc
-            li Cupcake ipsum dolor sit.
-            li Dragée biscuit applicake.
-            li
-              | Cupcake macaroon carrot .
-              ul
-                li Chupa chups biscuit gummi bears.
-                li Cake cheesecake jelly-o caramels jujubes chocolate cake.
-            li Candy I love cotton candy.
 
+        form.tab-menu
+          input.state#unordered-list-tab1 type="radio" name="unordered-list"
+          input.state#unordered-list-tab2 type="radio" checked="checked" name="unordered-list" 
+          .tabs
+            label.tab1.tab for="unordered-list-tab1" Usage
+            label.tab2.tab for="unordered-list-tab2" Display
+          .panels
+            pre#tab1-panel.panel
+              code
+                header HTML
+                p
+                  = '<ul class="disc">'
+                  br
+                  = '  <li> Cupcake ipsum dolor sit. </li>'
+                  br
+                  = '  <li> Dragée biscuit applicake. </li>'
+                  br
+                  = '  <li> Cupcake macaroon carrot .'
+                  br
+                  = '    <ul>'
+                  br
+                  = '      <li> Chupa chups biscuit gummi bears. </li> '
+                  br
+                  = '      <li> Cake cheesecake jelly-o caramels jujubes chocolate cake. </li> '
+                  br
+                  = '    </ul>'
+                  br
+                  = '  </li>'
+                  br
+                  = '  <li> Candy I love cotton candy. </li>'
+                  br
+                  = '</ul>'
+            #tab2-panel.panel
+              .example
+                ul.disc
+                  li Cupcake ipsum dolor sit.
+                  li Dragée biscuit applicake.
+                  li
+                    | Cupcake macaroon carrot .
+                    ul
+                      li Chupa chups biscuit gummi bears.
+                      li Cake cheesecake jelly-o caramels jujubes chocolate cake.
+                  li Candy I love cotton candy.
       section
         h3 Square Style
-        h6 Usage
-        pre
-          code
-            header HTML
-            p
-              = '<ul class="square">'
-              br
-              = '  <li> Cupcake ipsum dolor sit. </li>'
-              br
-              = '  <li> Dragée biscuit applicake. </li>'
-              br
-              = '  <li> Cupcake macaroon carrot .'
-              br
-              = '    <ul>'
-              br
-              = '      <li> Chupa chups biscuit gummi bears. </li> '
-              br
-              = '      <li> Cake cheesecake jelly-o caramels jujubes chocolate cake. </li> '
-              br
-              = '    </ul>'
-              br
-              = '  </li>'
-              br
-              = '  <li> Candy I love cotton candy. </li>'
-              br
-              = '</ul>'
-        h6 Output
-        .example
-          ul.square
-            li Cupcake ipsum dolor sit.
-            li Dragée biscuit applicake.
-            li
-              | Cupcake macaroon carrot .
-              ul
-                li Chupa chups biscuit gummi bears.
-                li Cake cheesecake jelly-o caramels jujubes chocolate cake.
-            li Candy I love cotton candy.
+
+        form.tab-menu
+          input.state#square-style-tab1 type="radio" name="square-style"
+          input.state#square-style-tab2 type="radio" checked="checked" name="square-style" 
+          .tabs
+            label.tab1.tab for="square-style-tab1" Usage
+            label.tab2.tab for="square-style-tab2" Display
+          .panels
+            pre#tab1-panel.panel
+              code
+                header HTML
+                p
+                  = '<ul class="square">'
+                  br
+                  = '  <li> Cupcake ipsum dolor sit. </li>'
+                  br
+                  = '  <li> Dragée biscuit applicake. </li>'
+                  br
+                  = '  <li> Cupcake macaroon carrot .'
+                  br
+                  = '    <ul>'
+                  br
+                  = '      <li> Chupa chups biscuit gummi bears. </li> '
+                  br
+                  = '      <li> Cake cheesecake jelly-o caramels jujubes chocolate cake. </li> '
+                  br
+                  = '    </ul>'
+                  br
+                  = '  </li>'
+                  br
+                  = '  <li> Candy I love cotton candy. </li>'
+                  br
+                  = '</ul>'
+            #tab2-panel.panel
+              .example
+                ul.square
+                  li Cupcake ipsum dolor sit.
+                  li Dragée biscuit applicake.
+                  li
+                    | Cupcake macaroon carrot .
+                    ul
+                      li Chupa chups biscuit gummi bears.
+                      li Cake cheesecake jelly-o caramels jujubes chocolate cake.
+                  li Candy I love cotton candy.
 
       section
         h3 No Style
-        h6 Usage
-        pre
-          code
-            header HTML
-            p
-              = '<ul class="no-style">'
-              br
-              = '  <li> Cupcake ipsum dolor sit. </li>'
-              br
-              = '  <li> Dragée biscuit applicake. </li>'
-              br
-              = '  <li> Cupcake macaroon carrot .'
-              br
-              = '    <ul>'
-              br
-              = '      <li> Chupa chups biscuit gummi bears. </li> '
-              br
-              = '      <li> Cake cheesecake jelly-o caramels jujubes chocolate cake. </li> '
-              br
-              = '    </ul>'
-              br
-              = '  </li>'
-              br
-              = '  <li> Candy I love cotton candy. </li>'
-              br
-              = '</ul>'
-        h6 Output
-        .example
-          ul.no-style
-            li Cupcake ipsum dolor sit.
-            li Dragée biscuit applicake.
-            li
-              | Cupcake macaroon carrot .
-              ul
-                li Chupa chups biscuit gummi bears.
-                li Cake cheesecake jelly-o caramels jujubes chocolate cake.
-            li Candy I love cotton candy.
+
+        form.tab-menu
+          input.state#no-style-tab1 type="radio" name="no-style"
+          input.state#no-style-tab2 type="radio" checked="checked" name="no-style" 
+          .tabs
+            label.tab1.tab for="no-style-tab1" Usage
+            label.tab2.tab for="no-style-tab2" Display
+          .panels
+            pre#tab1-panel.panel
+              code
+                header HTML
+                p
+                  = '<ul class="no-style">'
+                  br
+                  = '  <li> Cupcake ipsum dolor sit. </li>'
+                  br
+                  = '  <li> Dragée biscuit applicake. </li>'
+                  br
+                  = '  <li> Cupcake macaroon carrot .'
+                  br
+                  = '    <ul>'
+                  br
+                  = '      <li> Chupa chups biscuit gummi bears. </li> '
+                  br
+                  = '      <li> Cake cheesecake jelly-o caramels jujubes chocolate cake. </li> '
+                  br
+                  = '    </ul>'
+                  br
+                  = '  </li>'
+                  br
+                  = '  <li> Candy I love cotton candy. </li>'
+                  br
+                  = '</ul>'
+            #tab2-panel.panel
+              .example
+                ul.no-style
+                  li Cupcake ipsum dolor sit.
+                  li Dragée biscuit applicake.
+                  li
+                    | Cupcake macaroon carrot .
+                    ul
+                      li Chupa chups biscuit gummi bears.
+                      li Cake cheesecake jelly-o caramels jujubes chocolate cake.
+                  li Candy I love cotton candy.
 
     section
       h2 Ordered list
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<ol>'
-            br
-            = '  <li> Cupcake ipsum dolor sit. </li>'
-            br
-            = '  <li> Dragée biscuit applicake. </li>'
-            br
-            = '  <li> Cupcake macaroon carrot .'
-            br
-            = '    <ol>'
-            br
-            = '      <li> Chupa chups biscuit gummi bears. </li> '
-            br
-            = '      <li> Cake cheesecake jelly-o caramels jujubes chocolate cake. </li> '
-            br
-            = '    </ol>'
-            br
-            = '  </li>'
-            br
-            = '  <li> Candy I love cotton candy. </li>'
-            br
-            = '</ol>'
-      h6 Output
-      .example
-        ol
-          li Cupcake ipsum dolor sit.
-          li Dragée biscuit applicake.
-          li
-            | Cupcake macaroon carrot .
-            ol
-              li Chupa chups biscuit gummi bears.
-              li Cake cheesecake jelly-o caramels jujubes chocolate cake.
-          li Candy I love cotton candy.
+
+      form.tab-menu
+        input.state#ordered-list-tab1 type="radio" name="ordered-list"
+        input.state#ordered-list-tab2 type="radio" checked="checked" name="ordered-list" 
+        .tabs
+          label.tab1.tab for="ordered-list-tab1" Usage
+          label.tab2.tab for="ordered-list-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<ol>'
+                br
+                = '  <li> Cupcake ipsum dolor sit. </li>'
+                br
+                = '  <li> Dragée biscuit applicake. </li>'
+                br
+                = '  <li> Cupcake macaroon carrot .'
+                br
+                = '    <ol>'
+                br
+                = '      <li> Chupa chups biscuit gummi bears. </li> '
+                br
+                = '      <li> Cake cheesecake jelly-o caramels jujubes chocolate cake. </li> '
+                br
+                = '    </ol>'
+                br
+                = '  </li>'
+                br
+                = '  <li> Candy I love cotton candy. </li>'
+                br
+                = '</ol>'
+          #tab2-panel.panel
+            .example
+              ol
+                li Cupcake ipsum dolor sit.
+                li Dragée biscuit applicake.
+                li
+                  | Cupcake macaroon carrot .
+                  ol
+                    li Chupa chups biscuit gummi bears.
+                    li Cake cheesecake jelly-o caramels jujubes chocolate cake.
+                li Candy I love cotton candy.
 
     section
       h2 Definition list
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<dl>'
-            br
-            = '  <dt> Cupcake ipsum dolor sit. </dt>'
-            br
-            = '  <dd> Amet cake fruitcake topping pie brownie pudding croissant sweet roll. Gingerbread lollipop soufflé. Candy I love cotton candy. Candy canes gummies I love chocolate bar gingerbread.  </dd>'
-            br
-            = '</dl>'
-      h6 Output
-      .example
-        dl
-          dt Cupcake ipsum dolor sit.
-          dd Amet cake fruitcake topping pie brownie pudding croissant sweet roll. Gingerbread lollipop soufflé. Candy I love cotton candy. Candy canes gummies I love chocolate bar gingerbread. 
+
+      form.tab-menu
+        input.state#definition-list-tab1 type="radio" name="definition-list"
+        input.state#definition-list-tab2 type="radio" checked="checked" name="definition-list" 
+        .tabs
+          label.tab1.tab for="definition-list-tab1" Usage
+          label.tab2.tab for="definition-list-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<dl>'
+                br
+                = '  <dt> Cupcake ipsum dolor sit. </dt>'
+                br
+                = '  <dd> Amet cake fruitcake topping pie brownie pudding croissant sweet roll. Gingerbread lollipop soufflé. Candy I love cotton candy. Candy canes gummies I love chocolate bar gingerbread.  </dd>'
+                br
+                = '</dl>'
+          #tab2-panel.panel
+            .example
+              dl
+                dt Cupcake ipsum dolor sit.
+                dd Amet cake fruitcake topping pie brownie pudding croissant sweet roll. Gingerbread lollipop soufflé. Candy I love cotton candy. Candy canes gummies I love chocolate bar gingerbread. 
 
     section
       h2 Adresse
-      h6 Usage
-      pre
-        code
-          header HTML
-          p
-            = '<address>'
-            br
-            = '  <li class="name">Soufflé sesame</li>'
-            br
-            = '  <li class="street-address">789 Cookie Ave.</li>'
-            br
-            = '  <li class="locality">Candy City</li>'
-            br
-            = '  <li><span class="state">Marzipan</span>, <span class="zip">12345</span></li>'
-            br
-            = '  <li class="email"><a href="#">s.sesame@example.com</a></li>'
-            br
-            = '</address>'
-      h6 Output
-      .example
-        address
-          li.name Soufflé sesame
-          li.street-address 789 Cookie Ave.
-          li.locality Candy City
-          li
-            span.state Marzipan
-            | , 
-            span.zip 12345
-          li.email
-            a href="#" s.sesame@example.com
+
+      form.tab-menu
+        input.state#adresse-tab1 type="radio" name="adresse"
+        input.state#adresse-tab2 type="radio" checked="checked" name="adresse" 
+        .tabs
+          label.tab1.tab for="adresse-tab1" Usage
+          label.tab2.tab for="adresse-tab2" Display
+        .panels
+          pre#tab1-panel.panel
+            code
+              header HTML
+              p
+                = '<address>'
+                br
+                = '  <li class="name">Soufflé sesame</li>'
+                br
+                = '  <li class="street-address">789 Cookie Ave.</li>'
+                br
+                = '  <li class="locality">Candy City</li>'
+                br
+                = '  <li><span class="state">Marzipan</span>, <span class="zip">12345</span></li>'
+                br
+                = '  <li class="email"><a href="#">s.sesame@example.com</a></li>'
+                br
+                = '</address>'
+          #tab2-panel.panel
+            .example
+              address
+                li.name Soufflé sesame
+                li.street-address 789 Cookie Ave.
+                li.locality Candy City
+                li
+                  span.state Marzipan
+                  | , 
+                  span.zip 12345
+                li.email
+                  a href="#" s.sesame@example.com

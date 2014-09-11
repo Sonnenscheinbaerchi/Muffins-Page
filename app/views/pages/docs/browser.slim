@@ -37,34 +37,38 @@
           |  as well as a 
           code $max-width 
           |  (default: false).
-        h6 Usage
-        pre
-          code
-            header SCSS
-            p
-              = '.content {'
-              br
-              = '  float: left;'
-              br
-              = '  width: 60%;'
-              br
-              = '  background-color: red;'
-              br
-              br
-              = '  @include fix-media-queries (350px) {'
-              br
-              = '    background-color: green;'
-              br
-              = '  }'
-              br
-              br
-              = '  @include fix-media-queries (496px, 1024px) {'
-              br
-              = '    background-color: blue;'
-              br
-              = '  }'
-              br
-              = '}'
+        form.tab-menu
+          input.state#usingMixin-tab1 type="radio" checked="checked" name="usingMixin"
+          .tabs
+            label.tab1.tab for="usingMixin-tab1" Usage
+          .panels
+            pre#tab1-panel.panel
+              code
+                header SCSS
+                p
+                  = '.content {'
+                  br
+                  = '  float: left;'
+                  br
+                  = '  width: 60%;'
+                  br
+                  = '  background-color: red;'
+                  br
+                  br
+                  = '  @include fix-media-queries (350px) {'
+                  br
+                  = '    background-color: green;'
+                  br
+                  = '  }'
+                  br
+                  br
+                  = '  @include fix-media-queries (496px, 1024px) {'
+                  br
+                  = '    background-color: blue;'
+                  br
+                  = '  }'
+                  br
+                  = '}'
 
     section
       h2 Old browser
@@ -73,27 +77,31 @@
         | With muffins you can include these statements directly in your sass files. With the Mixin 
         code old-browser()
         |   you can explicitly create statements for old browsers that you can separate in a separate stylesheetfile.
-      h6 Usage
-      pre 
-        code
-          header SCSS
-          p
-            = '.content {'
-            br
-            = '  width: 80%;'
-            br
-            = '  margin: 0 auto;'
-            br
-            br
-            = '  @include old-browser {'
-            br
-            = '    zoom: 1;'
-            br
-            = '    whatever-you-need: comes here;'
-            br
-            = '  }'
-            br
-            = '}'
+      form.tab-menu
+        input.state#oldBrowser-tab1 type="radio" checked="checked" name="oldBrowser"
+        .tabs 
+          label.tab1.tab for="oldBrowser-tab1" Usage
+        .panels
+          pre.tab1-panel.panel
+            code
+              header SCSS
+              p
+                = '.content {'
+                br
+                = '  width: 80%;'
+                br
+                = '  margin: 0 auto;'
+                br
+                br
+                = '  @include old-browser {'
+                br
+                = '    zoom: 1;'
+                br
+                = '    whatever-you-need: comes here;'
+                br
+                = '  }'
+                br
+                = '}'
 
       section
         h3 Generate stylesheet file

@@ -22,3 +22,14 @@
 @import "muffins/themes/buttercream/style";
 
 @import "logo";
+
+.example {
+
+  background-color: $color-background-code;
+  border: 1px solid darken($color-background-code, 10%);
+  display: block;
+  margin: 0;
+  padding: ($space * 2);
+
+  @include border-radius($border-radius-code);
+}
